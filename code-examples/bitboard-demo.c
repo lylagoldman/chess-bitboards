@@ -45,6 +45,11 @@ uint64_t shift_west_safe(uint64_t board) {
     return (board & NOT_FILE_A) >> 1;
 }
 
+/* ---------- Shift one square east, with wraparound protection ---------- */
+uint64_t shift_east_safe(uint64_t board) {
+    return (board & NOT_FILE_H) << 1;
+}
+
 /* ---------- Shift one square west, WITHOUT protection (to show the bug) ---------- */
 uint64_t shift_west_buggy(uint64_t board) {
     return board >> 1;
