@@ -1,0 +1,1286 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://healeycodes.com/visualizing-chess-bitboards
+Subject: =?utf-8?Q?Visualizing=20Chess=20Bitboards=20=E2=80=94=20Andrew=20Healey?=
+Date: Sun, 15 Nov 2026 22:49:12 GMT
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--K9nbMfIoinH453O6WTnHGBoL7ZHVufPO1PCU1QkY65----"
+
+
+------MultipartBoundary--K9nbMfIoinH453O6WTnHGBoL7ZHVufPO1PCU1QkY65----
+Content-Type: text/html
+Content-ID: <frame-DD4FFA9D1E20F58EE527FEFFAC98E0C9@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://healeycodes.com/visualizing-chess-bitboards
+
+<!DOCTYPE html><html lang=3D"en"><head><meta http-equiv=3D"Content-Type" co=
+ntent=3D"text/html; charset=3DUTF-8"><link rel=3D"stylesheet" type=3D"text/=
+css" href=3D"cid:css-57744019-6484-4d12-990e-73d87ff50bcc@mhtml.blink" /><l=
+ink rel=3D"stylesheet" type=3D"text/css" href=3D"cid:css-083a2755-dd6d-4383=
+-9c0a-e53843177201@mhtml.blink" /><link rel=3D"stylesheet" type=3D"text/css=
+" href=3D"cid:css-f63e99fe-0d6f-410a-82e2-458e2c687f72@mhtml.blink" /><link=
+ rel=3D"stylesheet" type=3D"text/css" href=3D"cid:css-5ba9262a-aff7-4f1a-a6=
+8e-a229e05e2c49@mhtml.blink" /><link rel=3D"stylesheet" type=3D"text/css" h=
+ref=3D"cid:css-dc4f4727-e8b3-4834-b545-161549110b54@mhtml.blink" /><link re=
+l=3D"stylesheet" type=3D"text/css" href=3D"cid:css-3dc4bc95-94cb-4176-8a4b-=
+ab9f9f908094@mhtml.blink" /><link rel=3D"stylesheet" type=3D"text/css" href=
+=3D"cid:css-f86a99da-087e-4922-b939-03c0576b99c2@mhtml.blink" /><link rel=
+=3D"stylesheet" type=3D"text/css" href=3D"cid:css-bd4095ba-995c-42bd-adcf-b=
+b860d2c0e22@mhtml.blink" /><link rel=3D"stylesheet" type=3D"text/css" href=
+=3D"cid:css-08adaae4-d93e-4821-91c1-16a09f05c1bd@mhtml.blink" /><title clas=
+s=3D"jsx-2905096934 jsx-1164733520">Visualizing Chess Bitboards =E2=80=94 A=
+ndrew Healey</title><meta name=3D"description" content=3D"Brief introductio=
+n to chess bitboards and move generation with animations." class=3D"jsx-290=
+5096934 jsx-1164733520"><link rel=3D"alternate" type=3D"application/rss+xml=
+" title=3D"RSS Feed for https://healeycodes.com" href=3D"https://healeycode=
+s.com/feed.xml" class=3D"jsx-2905096934 jsx-1164733520"><link rel=3D"shortc=
+ut icon" href=3D"https://healeycodes.com/favicon.ico" class=3D"jsx-29050969=
+34 jsx-1164733520"><meta property=3D"og:title" content=3D"Visualizing Chess=
+ Bitboards" class=3D"jsx-2905096934 jsx-1164733520"><meta property=3D"og:de=
+scription" content=3D"Brief introduction to chess bitboards and move genera=
+tion with animations." class=3D"jsx-2905096934 jsx-1164733520"><meta proper=
+ty=3D"og:type" content=3D"website" class=3D"jsx-2905096934 jsx-1164733520">=
+<meta property=3D"twitter:card" content=3D"summary" class=3D"jsx-2905096934=
+ jsx-1164733520"><meta property=3D"twitter:site" content=3D"@healeycodes" c=
+lass=3D"jsx-2905096934 jsx-1164733520"><meta property=3D"twitter:creator" c=
+ontent=3D"@healeycodes" class=3D"jsx-2905096934 jsx-1164733520"><meta prope=
+rty=3D"twitter:title" content=3D"Visualizing Chess Bitboards" class=3D"jsx-=
+2905096934 jsx-1164733520"><meta property=3D"twitter:description" content=
+=3D"Brief introduction to chess bitboards and move generation with animatio=
+ns." class=3D"jsx-2905096934 jsx-1164733520"><meta name=3D"viewport" conten=
+t=3D"initial-scale=3D1.0, width=3Ddevice-width" class=3D"jsx-2905096934 jsx=
+-1164733520"><meta name=3D"next-head-count" content=3D"14"><link rel=3D"pre=
+connect" href=3D"https://fonts.gstatic.com/" crossorigin=3D""><link as=3D"s=
+cript" rel=3D"prefetch" href=3D"https://healeycodes.com/_next/static/chunks=
+/pages/index-97b9ab944bb98d42.js"><link as=3D"script" rel=3D"prefetch" href=
+=3D"https://healeycodes.com/_next/static/chunks/pages/articles-6f26a8adb9e1=
+0867.js"><link as=3D"script" rel=3D"prefetch" href=3D"https://healeycodes.c=
+om/_next/static/chunks/pages/projects-a2ff3db7962245df.js"><link as=3D"scri=
+pt" rel=3D"prefetch" href=3D"https://healeycodes.com/_next/static/chunks/pa=
+ges/notes-10863f280e6d6ac3.js"></head><body><div id=3D"__next"><div class=
+=3D"jsx-2905096934 jsx-1164733520 container"><nav class=3D"jsx-b6b2ba738cc0=
+019d"><ul class=3D"jsx-b6b2ba738cc0019d"><li class=3D"jsx-b6b2ba738cc0019d"=
+><a href=3D"https://healeycodes.com/">Andrew Healey</a></li><li class=3D"js=
+x-b6b2ba738cc0019d"><a href=3D"https://healeycodes.com/articles">Articles</=
+a></li><li class=3D"jsx-b6b2ba738cc0019d"><a href=3D"https://healeycodes.co=
+m/projects">Projects</a></li><li class=3D"jsx-b6b2ba738cc0019d"><a href=3D"=
+https://healeycodes.com/notes">Notes</a></li><li class=3D"jsx-b6b2ba738cc00=
+19d"><a href=3D"https://github.com/healeycodes" target=3D"_blank" class=3D"=
+jsx-b6b2ba738cc0019d">GitHub</a></li><li class=3D"jsx-b6b2ba738cc0019d"><a =
+href=3D"https://twitter.com/healeycodes" target=3D"_blank" class=3D"jsx-b6b=
+2ba738cc0019d">Twitter</a></li><li class=3D"jsx-b6b2ba738cc0019d"><a href=
+=3D"https://healeycodes.com/feed.xml" class=3D"jsx-b6b2ba738cc0019d">RSS</a=
+></li></ul></nav><header class=3D"jsx-b6ee29e184816190"><h1 class=3D"jsx-b6=
+ee29e184816190 post-title">Visualizing Chess Bitboards</h1><p class=3D"jsx-=
+b6ee29e184816190 post-date"><time datetime=3D"2025-04-13">Apr 2025</time></=
+p></header><main class=3D"jsx-b6ee29e184816190 post-text"><div><p>When simu=
+lating board games on a computer, one of the challenges is keeping track of=
+ the game pieces. Bitboards are an efficient way to store game state in (us=
+ually) 64-bit integers. There are 64 positions on a chess board so we can u=
+se each bit as an on/off switch.</p><p>Let's say I want to describe a board=
+ where <code>f5</code> is occupied. For that, we can use the number <code>6=
+7108864</code>. In decimal notation, it doesn't look that much like a chess=
+board. In hex, we can see that there's a little more structure: <code>0x000=
+0000004000000</code>.</p><p>For me, it starts to make more sense when repre=
+sentated as a binary number with 64 digits.</p><pre><div class=3D"jsx-1290c=
+20ab25545a6 code"><div style=3D"color:#393A34;background-color:#f6f8fa" cla=
+ss=3D"jsx-1290c20ab25545a6 prism-code language-text"><div class=3D"jsx-1290=
+c20ab25545a6 token-line code-line " style=3D"color:#393A34"><span class=3D"=
+jsx-1290c20ab25545a6">0 0 0 0 0 0 0 0  I've added a line break</span></div>=
+<div class=3D"jsx-1290c20ab25545a6 token-line code-line " style=3D"color:#3=
+93A34"><span class=3D"jsx-1290c20ab25545a6">0 0 0 0 0 0 0 0  after every ei=
+ght numbers</span></div><div class=3D"jsx-1290c20ab25545a6 token-line code-=
+line " style=3D"color:#393A34"><span class=3D"jsx-1290c20ab25545a6">0 0 0 0=
+ 0 0 0 0</span></div><div class=3D"jsx-1290c20ab25545a6 token-line code-lin=
+e " style=3D"color:#393A34"><span class=3D"jsx-1290c20ab25545a6">0 0 0 0 0 =
+0 0 0</span></div><div class=3D"jsx-1290c20ab25545a6 token-line code-line "=
+ style=3D"color:#393A34"><span class=3D"jsx-1290c20ab25545a6">0 0 0 0 0 1 0=
+ 0  looks kinda like a chessboard, right?</span></div><div class=3D"jsx-129=
+0c20ab25545a6 token-line code-line " style=3D"color:#393A34"><span class=3D=
+"jsx-1290c20ab25545a6">0 0 0 0 0 0 0 0</span></div><div class=3D"jsx-1290c2=
+0ab25545a6 token-line code-line " style=3D"color:#393A34"><span class=3D"js=
+x-1290c20ab25545a6">0 0 0 0 0 0 0 0</span></div><div class=3D"jsx-1290c20ab=
+25545a6 token-line code-line " style=3D"color:#393A34"><span class=3D"jsx-1=
+290c20ab25545a6">0 0 0 0 0 0 0 0</span></div></div></div></pre><p>We can't =
+pack an <em>entire</em> game's state into a number (e.g. piece color, piece=
+ type, castling rights) so we use groups of numbers.</p><p>We can use <em>b=
+itwise</em> operations on these numbers to manipulate individual bits using=
+ operators like <code>AND</code>, <code>OR</code>, <code>XOR</code>, <code>=
+NOT</code>, and bit shifts. These operations are are among the fastest oper=
+ations a CPU can perform. Bitboards are also cache-friendly since they pack=
+ data into fewer memory locations.</p><p>In order to move a piece at <code>=
+f5</code> forwards we can shift the bitboard left by 8 bits.</p><pre><div c=
+lass=3D"jsx-1290c20ab25545a6 code"><div style=3D"color:#393A34;background-c=
+olor:#f6f8fa" class=3D"jsx-1290c20ab25545a6 prism-code language-js"><div cl=
+ass=3D"jsx-1290c20ab25545a6 token-line code-line " style=3D"color:#393A34">=
+<span class=3D"jsx-1290c20ab25545a6">pieceOnF5 </span><span class=3D"jsx-12=
+90c20ab25545a6" style=3D"color:#393A34">=3D</span><span class=3D"jsx-1290c2=
+0ab25545a6"> </span><span class=3D"jsx-1290c20ab25545a6" style=3D"color:#36=
+acaa">0x0000000004000000</span><span class=3D"jsx-1290c20ab25545a6" style=
+=3D"color:#393A34">;</span><span class=3D"jsx-1290c20ab25545a6"></span></di=
+v><div class=3D"jsx-1290c20ab25545a6 token-line code-line " style=3D"color:=
+#393A34"><span class=3D"jsx-1290c20ab25545a6"></span><span class=3D"jsx-129=
+0c20ab25545a6" style=3D"color:#999988;font-style:italic">// Move one rank f=
+orward (from f5 to f6)</span><span class=3D"jsx-1290c20ab25545a6"></span></=
+div><div class=3D"jsx-1290c20ab25545a6 token-line code-line " style=3D"colo=
+r:#393A34"><span class=3D"jsx-1290c20ab25545a6">pieceOnF5 </span><span clas=
+s=3D"jsx-1290c20ab25545a6" style=3D"color:#393A34">&lt;&lt;</span><span cla=
+ss=3D"jsx-1290c20ab25545a6"> </span><span class=3D"jsx-1290c20ab25545a6" st=
+yle=3D"color:#36acaa">8</span><span class=3D"jsx-1290c20ab25545a6" style=3D=
+"color:#393A34">;</span><span class=3D"jsx-1290c20ab25545a6"> </span><span =
+class=3D"jsx-1290c20ab25545a6" style=3D"color:#999988;font-style:italic">//=
+ 0x0000000400000000</span></div></div></div></pre><p>Why 8? Well, if you pi=
+cture all of a chessboard's squares lined up in one long row, moving upward=
+s would require you to move 8 places to the left.</p><h1 id=3D"masks">Masks=
+</h1><p>A mask is a bitboard used to isolate, modify, or test specific squa=
+res using bitwise operations.</p><p>An example of a mask might be the <code=
+>A</code> file: <code>0x0101010101010101</code>. To check if there are any =
+pieces on the <code>A</code> file, we can use bitwise <code>AND</code>.</p>=
+<pre><div class=3D"jsx-1290c20ab25545a6 code"><div style=3D"color:#393A34;b=
+ackground-color:#f6f8fa" class=3D"jsx-1290c20ab25545a6 prism-code language-=
+js"><div class=3D"jsx-1290c20ab25545a6 token-line code-line " style=3D"colo=
+r:#393A34"><span class=3D"jsx-1290c20ab25545a6" style=3D"color:#00009f">if<=
+/span><span class=3D"jsx-1290c20ab25545a6"> </span><span class=3D"jsx-1290c=
+20ab25545a6" style=3D"color:#393A34">(</span><span class=3D"jsx-1290c20ab25=
+545a6">pieces </span><span class=3D"jsx-1290c20ab25545a6" style=3D"color:#3=
+93A34">&amp;</span><span class=3D"jsx-1290c20ab25545a6"> </span><span class=
+=3D"jsx-1290c20ab25545a6" style=3D"color:#36acaa">0x0101010101010101</span>=
+<span class=3D"jsx-1290c20ab25545a6" style=3D"color:#393A34">)</span><span =
+class=3D"jsx-1290c20ab25545a6"> </span><span class=3D"jsx-1290c20ab25545a6"=
+ style=3D"color:#393A34">{</span><span class=3D"jsx-1290c20ab25545a6"></spa=
+n></div><div class=3D"jsx-1290c20ab25545a6 token-line code-line " style=3D"=
+color:#393A34"><span class=3D"jsx-1290c20ab25545a6">  </span><span class=3D=
+"jsx-1290c20ab25545a6" style=3D"color:#999988;font-style:italic">// At leas=
+t one piece on the A file</span><span class=3D"jsx-1290c20ab25545a6"></span=
+></div><div class=3D"jsx-1290c20ab25545a6 token-line code-line " style=3D"c=
+olor:#393A34"><span class=3D"jsx-1290c20ab25545a6"></span><span class=3D"js=
+x-1290c20ab25545a6" style=3D"color:#393A34">}</span></div></div></div></pre=
+><p>Even though I know a little bit about bitboards, I still find them conf=
+using and unintuitive. I'm also prone to mistakes while working with them.<=
+/p><p>I've found that visual examples (and interactive debugging tools) can=
+ be very helpful. Let's take a look at how we can generate the initial whit=
+e pawn attacks.</p><p>Two numbers will probably stick out in the below exam=
+ple; <code>7</code> and <code>9</code>. If you picture that long row of che=
+ssboard squares I mentioned before, think about how many squares you'd have=
+ to move to be diagonally forwards or backwards from your starting position=
+.</p><div class=3D"jsx-70e7e3c2411fa9bb visualizer-container"><pre class=3D=
+"jsx-70e7e3c2411fa9bb"><div class=3D"jsx-1290c20ab25545a6 code"><div style=
+=3D"color:#393A34;background-color:#f6f8fa" class=3D"jsx-1290c20ab25545a6 p=
+rism-code language-javascript"><div class=3D"jsx-1290c20ab25545a6 token-lin=
+e code-line " style=3D"color:#393A34"><span class=3D"jsx-1290c20ab25545a6" =
+style=3D"color:#999988;font-style:italic">// Initial white pawn attacks</sp=
+an><span class=3D"jsx-1290c20ab25545a6"></span></div><div class=3D"jsx-1290=
+c20ab25545a6 token-line code-line " style=3D"color:#393A34"><span class=3D"=
+jsx-1290c20ab25545a6"></span><span class=3D"jsx-1290c20ab25545a6" style=3D"=
+color:#36acaa">FILE_A</span><span class=3D"jsx-1290c20ab25545a6"> </span><s=
+pan class=3D"jsx-1290c20ab25545a6" style=3D"color:#393A34">=3D</span><span =
+class=3D"jsx-1290c20ab25545a6"> </span><span class=3D"jsx-1290c20ab25545a6"=
+ style=3D"color:#36acaa">0x0101010101010101</span><span class=3D"jsx-1290c2=
+0ab25545a6" style=3D"color:#393A34">;</span><span class=3D"jsx-1290c20ab255=
+45a6"></span></div><div class=3D"jsx-1290c20ab25545a6 token-line code-line =
+" style=3D"color:#393A34"><span class=3D"jsx-1290c20ab25545a6"></span><span=
+ class=3D"jsx-1290c20ab25545a6" style=3D"color:#36acaa">FILE_H</span><span =
+class=3D"jsx-1290c20ab25545a6"> </span><span class=3D"jsx-1290c20ab25545a6"=
+ style=3D"color:#393A34">=3D</span><span class=3D"jsx-1290c20ab25545a6"> </=
+span><span class=3D"jsx-1290c20ab25545a6" style=3D"color:#36acaa">0x8080808=
+080808080</span><span class=3D"jsx-1290c20ab25545a6" style=3D"color:#393A34=
+">;</span><span class=3D"jsx-1290c20ab25545a6"></span></div><div class=3D"j=
+sx-1290c20ab25545a6 token-line code-line " style=3D"color:#393A34"><span cl=
+ass=3D"jsx-1290c20ab25545a6">white_pawns </span><span class=3D"jsx-1290c20a=
+b25545a6" style=3D"color:#393A34">=3D</span><span class=3D"jsx-1290c20ab255=
+45a6"> </span><span class=3D"jsx-1290c20ab25545a6" style=3D"color:#36acaa">=
+0x000000000000FF00</span><span class=3D"jsx-1290c20ab25545a6" style=3D"colo=
+r:#393A34">;</span><span class=3D"jsx-1290c20ab25545a6"></span></div><div c=
+lass=3D"jsx-1290c20ab25545a6 token-line code-line " style=3D"color:#393A34"=
+><span class=3D"jsx-1290c20ab25545a6">attacks_left  </span><span class=3D"j=
+sx-1290c20ab25545a6" style=3D"color:#393A34">=3D</span><span class=3D"jsx-1=
+290c20ab25545a6"> </span><span class=3D"jsx-1290c20ab25545a6" style=3D"colo=
+r:#393A34">(</span><span class=3D"jsx-1290c20ab25545a6">white_pawns </span>=
+<span class=3D"jsx-1290c20ab25545a6" style=3D"color:#393A34">&amp;</span><s=
+pan class=3D"jsx-1290c20ab25545a6"> </span><span class=3D"jsx-1290c20ab2554=
+5a6" style=3D"color:#393A34">~</span><span class=3D"jsx-1290c20ab25545a6" s=
+tyle=3D"color:#36acaa">FILE_A</span><span class=3D"jsx-1290c20ab25545a6" st=
+yle=3D"color:#393A34">)</span><span class=3D"jsx-1290c20ab25545a6"> </span>=
+<span class=3D"jsx-1290c20ab25545a6" style=3D"color:#393A34">&lt;&lt;</span=
+><span class=3D"jsx-1290c20ab25545a6"> </span><span class=3D"jsx-1290c20ab2=
+5545a6" style=3D"color:#36acaa">7</span><span class=3D"jsx-1290c20ab25545a6=
+" style=3D"color:#393A34">;</span><span class=3D"jsx-1290c20ab25545a6"></sp=
+an></div><div class=3D"jsx-1290c20ab25545a6 token-line code-line highlighte=
+d" style=3D"color:#393A34"><span class=3D"jsx-1290c20ab25545a6">attacks_rig=
+ht </span><span class=3D"jsx-1290c20ab25545a6" style=3D"color:#393A34">=3D<=
+/span><span class=3D"jsx-1290c20ab25545a6"> </span><span class=3D"jsx-1290c=
+20ab25545a6" style=3D"color:#393A34">(</span><span class=3D"jsx-1290c20ab25=
+545a6">white_pawns </span><span class=3D"jsx-1290c20ab25545a6" style=3D"col=
+or:#393A34">&amp;</span><span class=3D"jsx-1290c20ab25545a6"> </span><span =
+class=3D"jsx-1290c20ab25545a6" style=3D"color:#393A34">~</span><span class=
+=3D"jsx-1290c20ab25545a6" style=3D"color:#36acaa">FILE_H</span><span class=
+=3D"jsx-1290c20ab25545a6" style=3D"color:#393A34">)</span><span class=3D"js=
+x-1290c20ab25545a6"> </span><span class=3D"jsx-1290c20ab25545a6" style=3D"c=
+olor:#393A34">&lt;&lt;</span><span class=3D"jsx-1290c20ab25545a6"> </span><=
+span class=3D"jsx-1290c20ab25545a6" style=3D"color:#36acaa">9</span><span c=
+lass=3D"jsx-1290c20ab25545a6" style=3D"color:#393A34">;</span><span class=
+=3D"jsx-1290c20ab25545a6"></span></div><div class=3D"jsx-1290c20ab25545a6 t=
+oken-line code-line " style=3D"color:#393A34"><span class=3D"jsx-1290c20ab2=
+5545a6">pawn_attacks  </span><span class=3D"jsx-1290c20ab25545a6" style=3D"=
+color:#393A34">=3D</span><span class=3D"jsx-1290c20ab25545a6"> attacks_left=
+ </span><span class=3D"jsx-1290c20ab25545a6" style=3D"color:#393A34">|</spa=
+n><span class=3D"jsx-1290c20ab25545a6"> attacks_right</span><span class=3D"=
+jsx-1290c20ab25545a6" style=3D"color:#393A34">;</span></div></div></div></p=
+re><div class=3D"jsx-70e7e3c2411fa9bb board-container"><div class=3D"jsx-70=
+e7e3c2411fa9bb chessboard"><div class=3D"jsx-70e7e3c2411fa9bb board-grid"><=
+div class=3D"jsx-70e7e3c2411fa9bb square light-square"><div class=3D"jsx-70=
+e7e3c2411fa9bb bit-overlay"></div><span class=3D"jsx-70e7e3c2411fa9bb squar=
+e-coord">H<!-- -->8</span><span class=3D"jsx-70e7e3c2411fa9bb square-index"=
+>0</span></div><div class=3D"jsx-70e7e3c2411fa9bb square dark-square"><div =
+class=3D"jsx-70e7e3c2411fa9bb bit-overlay"></div><span class=3D"jsx-70e7e3c=
+2411fa9bb square-coord">G<!-- -->8</span><span class=3D"jsx-70e7e3c2411fa9b=
+b square-index">1</span></div><div class=3D"jsx-70e7e3c2411fa9bb square lig=
+ht-square"><div class=3D"jsx-70e7e3c2411fa9bb bit-overlay"></div><span clas=
+s=3D"jsx-70e7e3c2411fa9bb square-coord">F<!-- -->8</span><span class=3D"jsx=
+-70e7e3c2411fa9bb square-index">2</span></div><div class=3D"jsx-70e7e3c2411=
+fa9bb square dark-square"><div class=3D"jsx-70e7e3c2411fa9bb bit-overlay"><=
+/div><span class=3D"jsx-70e7e3c2411fa9bb square-coord">E<!-- -->8</span><sp=
+an class=3D"jsx-70e7e3c2411fa9bb square-index">3</span></div><div class=3D"=
+jsx-70e7e3c2411fa9bb square light-square"><div class=3D"jsx-70e7e3c2411fa9b=
+b bit-overlay"></div><span class=3D"jsx-70e7e3c2411fa9bb square-coord">D<!-=
+- -->8</span><span class=3D"jsx-70e7e3c2411fa9bb square-index">4</span></di=
+v><div class=3D"jsx-70e7e3c2411fa9bb square dark-square"><div class=3D"jsx-=
+70e7e3c2411fa9bb bit-overlay"></div><span class=3D"jsx-70e7e3c2411fa9bb squ=
+are-coord">C<!-- -->8</span><span class=3D"jsx-70e7e3c2411fa9bb square-inde=
+x">5</span></div><div class=3D"jsx-70e7e3c2411fa9bb square light-square"><d=
+iv class=3D"jsx-70e7e3c2411fa9bb bit-overlay"></div><span class=3D"jsx-70e7=
+e3c2411fa9bb square-coord">B<!-- -->8</span><span class=3D"jsx-70e7e3c2411f=
+a9bb square-index">6</span></div><div class=3D"jsx-70e7e3c2411fa9bb square =
+dark-square"><div class=3D"jsx-70e7e3c2411fa9bb bit-overlay"></div><span cl=
+ass=3D"jsx-70e7e3c2411fa9bb square-coord">A<!-- -->8</span><span class=3D"j=
+sx-70e7e3c2411fa9bb square-index">7</span></div><div class=3D"jsx-70e7e3c24=
+11fa9bb square dark-square"><div class=3D"jsx-70e7e3c2411fa9bb bit-overlay"=
+></div><span class=3D"jsx-70e7e3c2411fa9bb square-coord">H<!-- -->7</span><=
+span class=3D"jsx-70e7e3c2411fa9bb square-index">8</span></div><div class=
+=3D"jsx-70e7e3c2411fa9bb square light-square"><div class=3D"jsx-70e7e3c2411=
+fa9bb bit-overlay"></div><span class=3D"jsx-70e7e3c2411fa9bb square-coord">=
+G<!-- -->7</span><span class=3D"jsx-70e7e3c2411fa9bb square-index">9</span>=
+</div><div class=3D"jsx-70e7e3c2411fa9bb square dark-square"><div class=3D"=
+jsx-70e7e3c2411fa9bb bit-overlay"></div><span class=3D"jsx-70e7e3c2411fa9bb=
+ square-coord">F<!-- -->7</span><span class=3D"jsx-70e7e3c2411fa9bb square-=
+index">10</span></div><div class=3D"jsx-70e7e3c2411fa9bb square light-squar=
+e"><div class=3D"jsx-70e7e3c2411fa9bb bit-overlay"></div><span class=3D"jsx=
+-70e7e3c2411fa9bb square-coord">E<!-- -->7</span><span class=3D"jsx-70e7e3c=
+2411fa9bb square-index">11</span></div><div class=3D"jsx-70e7e3c2411fa9bb s=
+quare dark-square"><div class=3D"jsx-70e7e3c2411fa9bb bit-overlay"></div><s=
+pan class=3D"jsx-70e7e3c2411fa9bb square-coord">D<!-- -->7</span><span clas=
+s=3D"jsx-70e7e3c2411fa9bb square-index">12</span></div><div class=3D"jsx-70=
+e7e3c2411fa9bb square light-square"><div class=3D"jsx-70e7e3c2411fa9bb bit-=
+overlay"></div><span class=3D"jsx-70e7e3c2411fa9bb square-coord">C<!-- -->7=
+</span><span class=3D"jsx-70e7e3c2411fa9bb square-index">13</span></div><di=
+v class=3D"jsx-70e7e3c2411fa9bb square dark-square"><div class=3D"jsx-70e7e=
+3c2411fa9bb bit-overlay"></div><span class=3D"jsx-70e7e3c2411fa9bb square-c=
+oord">B<!-- -->7</span><span class=3D"jsx-70e7e3c2411fa9bb square-index">14=
+</span></div><div class=3D"jsx-70e7e3c2411fa9bb square light-square"><div c=
+lass=3D"jsx-70e7e3c2411fa9bb bit-overlay"></div><span class=3D"jsx-70e7e3c2=
+411fa9bb square-coord">A<!-- -->7</span><span class=3D"jsx-70e7e3c2411fa9bb=
+ square-index">15</span></div><div class=3D"jsx-70e7e3c2411fa9bb square lig=
+ht-square"><div class=3D"jsx-70e7e3c2411fa9bb bit-overlay"></div><span clas=
+s=3D"jsx-70e7e3c2411fa9bb square-coord">H<!-- -->6</span><span class=3D"jsx=
+-70e7e3c2411fa9bb square-index">16</span></div><div class=3D"jsx-70e7e3c241=
+1fa9bb square dark-square bit-set"><div class=3D"jsx-70e7e3c2411fa9bb bit-o=
+verlay visible"></div><span class=3D"jsx-70e7e3c2411fa9bb square-coord">G<!=
+-- -->6</span><span class=3D"jsx-70e7e3c2411fa9bb square-index">17</span></=
+div><div class=3D"jsx-70e7e3c2411fa9bb square light-square bit-set"><div cl=
+ass=3D"jsx-70e7e3c2411fa9bb bit-overlay visible"></div><span class=3D"jsx-7=
+0e7e3c2411fa9bb square-coord">F<!-- -->6</span><span class=3D"jsx-70e7e3c24=
+11fa9bb square-index">18</span></div><div class=3D"jsx-70e7e3c2411fa9bb squ=
+are dark-square bit-set"><div class=3D"jsx-70e7e3c2411fa9bb bit-overlay vis=
+ible"></div><span class=3D"jsx-70e7e3c2411fa9bb square-coord">E<!-- -->6</s=
+pan><span class=3D"jsx-70e7e3c2411fa9bb square-index">19</span></div><div c=
+lass=3D"jsx-70e7e3c2411fa9bb square light-square bit-set"><div class=3D"jsx=
+-70e7e3c2411fa9bb bit-overlay visible"></div><span class=3D"jsx-70e7e3c2411=
+fa9bb square-coord">D<!-- -->6</span><span class=3D"jsx-70e7e3c2411fa9bb sq=
+uare-index">20</span></div><div class=3D"jsx-70e7e3c2411fa9bb square dark-s=
+quare bit-set"><div class=3D"jsx-70e7e3c2411fa9bb bit-overlay visible"></di=
+v><span class=3D"jsx-70e7e3c2411fa9bb square-coord">C<!-- -->6</span><span =
+class=3D"jsx-70e7e3c2411fa9bb square-index">21</span></div><div class=3D"js=
+x-70e7e3c2411fa9bb square light-square bit-set"><div class=3D"jsx-70e7e3c24=
+11fa9bb bit-overlay visible"></div><span class=3D"jsx-70e7e3c2411fa9bb squa=
+re-coord">B<!-- -->6</span><span class=3D"jsx-70e7e3c2411fa9bb square-index=
+">22</span></div><div class=3D"jsx-70e7e3c2411fa9bb square dark-square bit-=
+set"><div class=3D"jsx-70e7e3c2411fa9bb bit-overlay visible"></div><span cl=
+ass=3D"jsx-70e7e3c2411fa9bb square-coord">A<!-- -->6</span><span class=3D"j=
+sx-70e7e3c2411fa9bb square-index">23</span></div><div class=3D"jsx-70e7e3c2=
+411fa9bb square dark-square"><div class=3D"jsx-70e7e3c2411fa9bb bit-overlay=
+"></div><span class=3D"jsx-70e7e3c2411fa9bb square-coord">H<!-- -->5</span>=
+<span class=3D"jsx-70e7e3c2411fa9bb square-index">24</span></div><div class=
+=3D"jsx-70e7e3c2411fa9bb square light-square"><div class=3D"jsx-70e7e3c2411=
+fa9bb bit-overlay"></div><span class=3D"jsx-70e7e3c2411fa9bb square-coord">=
+G<!-- -->5</span><span class=3D"jsx-70e7e3c2411fa9bb square-index">25</span=
+></div><div class=3D"jsx-70e7e3c2411fa9bb square dark-square"><div class=3D=
+"jsx-70e7e3c2411fa9bb bit-overlay"></div><span class=3D"jsx-70e7e3c2411fa9b=
+b square-coord">F<!-- -->5</span><span class=3D"jsx-70e7e3c2411fa9bb square=
+-index">26</span></div><div class=3D"jsx-70e7e3c2411fa9bb square light-squa=
+re"><div class=3D"jsx-70e7e3c2411fa9bb bit-overlay"></div><span class=3D"js=
+x-70e7e3c2411fa9bb square-coord">E<!-- -->5</span><span class=3D"jsx-70e7e3=
+c2411fa9bb square-index">27</span></div><div class=3D"jsx-70e7e3c2411fa9bb =
+square dark-square"><div class=3D"jsx-70e7e3c2411fa9bb bit-overlay"></div><=
+span class=3D"jsx-70e7e3c2411fa9bb square-coord">D<!-- -->5</span><span cla=
+ss=3D"jsx-70e7e3c2411fa9bb square-index">28</span></div><div class=3D"jsx-7=
+0e7e3c2411fa9bb square light-square"><div class=3D"jsx-70e7e3c2411fa9bb bit=
+-overlay"></div><span class=3D"jsx-70e7e3c2411fa9bb square-coord">C<!-- -->=
+5</span><span class=3D"jsx-70e7e3c2411fa9bb square-index">29</span></div><d=
+iv class=3D"jsx-70e7e3c2411fa9bb square dark-square"><div class=3D"jsx-70e7=
+e3c2411fa9bb bit-overlay"></div><span class=3D"jsx-70e7e3c2411fa9bb square-=
+coord">B<!-- -->5</span><span class=3D"jsx-70e7e3c2411fa9bb square-index">3=
+0</span></div><div class=3D"jsx-70e7e3c2411fa9bb square light-square"><div =
+class=3D"jsx-70e7e3c2411fa9bb bit-overlay"></div><span class=3D"jsx-70e7e3c=
+2411fa9bb square-coord">A<!-- -->5</span><span class=3D"jsx-70e7e3c2411fa9b=
+b square-index">31</span></div><div class=3D"jsx-70e7e3c2411fa9bb square li=
+ght-square"><div class=3D"jsx-70e7e3c2411fa9bb bit-overlay"></div><span cla=
+ss=3D"jsx-70e7e3c2411fa9bb square-coord">H<!-- -->4</span><span class=3D"js=
+x-70e7e3c2411fa9bb square-index">32</span></div><div class=3D"jsx-70e7e3c24=
+11fa9bb square dark-square"><div class=3D"jsx-70e7e3c2411fa9bb bit-overlay"=
+></div><span class=3D"jsx-70e7e3c2411fa9bb square-coord">G<!-- -->4</span><=
+span class=3D"jsx-70e7e3c2411fa9bb square-index">33</span></div><div class=
+=3D"jsx-70e7e3c2411fa9bb square light-square"><div class=3D"jsx-70e7e3c2411=
+fa9bb bit-overlay"></div><span class=3D"jsx-70e7e3c2411fa9bb square-coord">=
+F<!-- -->4</span><span class=3D"jsx-70e7e3c2411fa9bb square-index">34</span=
+></div><div class=3D"jsx-70e7e3c2411fa9bb square dark-square"><div class=3D=
+"jsx-70e7e3c2411fa9bb bit-overlay"></div><span class=3D"jsx-70e7e3c2411fa9b=
+b square-coord">E<!-- -->4</span><span class=3D"jsx-70e7e3c2411fa9bb square=
+-index">35</span></div><div class=3D"jsx-70e7e3c2411fa9bb square light-squa=
+re"><div class=3D"jsx-70e7e3c2411fa9bb bit-overlay"></div><span class=3D"js=
+x-70e7e3c2411fa9bb square-coord">D<!-- -->4</span><span class=3D"jsx-70e7e3=
+c2411fa9bb square-index">36</span></div><div class=3D"jsx-70e7e3c2411fa9bb =
+square dark-square"><div class=3D"jsx-70e7e3c2411fa9bb bit-overlay"></div><=
+span class=3D"jsx-70e7e3c2411fa9bb square-coord">C<!-- -->4</span><span cla=
+ss=3D"jsx-70e7e3c2411fa9bb square-index">37</span></div><div class=3D"jsx-7=
+0e7e3c2411fa9bb square light-square"><div class=3D"jsx-70e7e3c2411fa9bb bit=
+-overlay"></div><span class=3D"jsx-70e7e3c2411fa9bb square-coord">B<!-- -->=
+4</span><span class=3D"jsx-70e7e3c2411fa9bb square-index">38</span></div><d=
+iv class=3D"jsx-70e7e3c2411fa9bb square dark-square"><div class=3D"jsx-70e7=
+e3c2411fa9bb bit-overlay"></div><span class=3D"jsx-70e7e3c2411fa9bb square-=
+coord">A<!-- -->4</span><span class=3D"jsx-70e7e3c2411fa9bb square-index">3=
+9</span></div><div class=3D"jsx-70e7e3c2411fa9bb square dark-square"><div c=
+lass=3D"jsx-70e7e3c2411fa9bb bit-overlay"></div><span class=3D"jsx-70e7e3c2=
+411fa9bb square-coord">H<!-- -->3</span><span class=3D"jsx-70e7e3c2411fa9bb=
+ square-index">40</span></div><div class=3D"jsx-70e7e3c2411fa9bb square lig=
+ht-square"><div class=3D"jsx-70e7e3c2411fa9bb bit-overlay"></div><span clas=
+s=3D"jsx-70e7e3c2411fa9bb square-coord">G<!-- -->3</span><span class=3D"jsx=
+-70e7e3c2411fa9bb square-index">41</span></div><div class=3D"jsx-70e7e3c241=
+1fa9bb square dark-square"><div class=3D"jsx-70e7e3c2411fa9bb bit-overlay">=
+</div><span class=3D"jsx-70e7e3c2411fa9bb square-coord">F<!-- -->3</span><s=
+pan class=3D"jsx-70e7e3c2411fa9bb square-index">42</span></div><div class=
+=3D"jsx-70e7e3c2411fa9bb square light-square"><div class=3D"jsx-70e7e3c2411=
+fa9bb bit-overlay"></div><span class=3D"jsx-70e7e3c2411fa9bb square-coord">=
+E<!-- -->3</span><span class=3D"jsx-70e7e3c2411fa9bb square-index">43</span=
+></div><div class=3D"jsx-70e7e3c2411fa9bb square dark-square"><div class=3D=
+"jsx-70e7e3c2411fa9bb bit-overlay"></div><span class=3D"jsx-70e7e3c2411fa9b=
+b square-coord">D<!-- -->3</span><span class=3D"jsx-70e7e3c2411fa9bb square=
+-index">44</span></div><div class=3D"jsx-70e7e3c2411fa9bb square light-squa=
+re"><div class=3D"jsx-70e7e3c2411fa9bb bit-overlay"></div><span class=3D"js=
+x-70e7e3c2411fa9bb square-coord">C<!-- -->3</span><span class=3D"jsx-70e7e3=
+c2411fa9bb square-index">45</span></div><div class=3D"jsx-70e7e3c2411fa9bb =
+square dark-square"><div class=3D"jsx-70e7e3c2411fa9bb bit-overlay"></div><=
+span class=3D"jsx-70e7e3c2411fa9bb square-coord">B<!-- -->3</span><span cla=
+ss=3D"jsx-70e7e3c2411fa9bb square-index">46</span></div><div class=3D"jsx-7=
+0e7e3c2411fa9bb square light-square"><div class=3D"jsx-70e7e3c2411fa9bb bit=
+-overlay"></div><span class=3D"jsx-70e7e3c2411fa9bb square-coord">A<!-- -->=
+3</span><span class=3D"jsx-70e7e3c2411fa9bb square-index">47</span></div><d=
+iv class=3D"jsx-70e7e3c2411fa9bb square light-square"><div class=3D"jsx-70e=
+7e3c2411fa9bb bit-overlay"></div><span class=3D"jsx-70e7e3c2411fa9bb square=
+-coord">H<!-- -->2</span><span class=3D"jsx-70e7e3c2411fa9bb square-index">=
+48</span></div><div class=3D"jsx-70e7e3c2411fa9bb square dark-square"><div =
+class=3D"jsx-70e7e3c2411fa9bb bit-overlay"></div><span class=3D"jsx-70e7e3c=
+2411fa9bb square-coord">G<!-- -->2</span><span class=3D"jsx-70e7e3c2411fa9b=
+b square-index">49</span></div><div class=3D"jsx-70e7e3c2411fa9bb square li=
+ght-square"><div class=3D"jsx-70e7e3c2411fa9bb bit-overlay"></div><span cla=
+ss=3D"jsx-70e7e3c2411fa9bb square-coord">F<!-- -->2</span><span class=3D"js=
+x-70e7e3c2411fa9bb square-index">50</span></div><div class=3D"jsx-70e7e3c24=
+11fa9bb square dark-square"><div class=3D"jsx-70e7e3c2411fa9bb bit-overlay"=
+></div><span class=3D"jsx-70e7e3c2411fa9bb square-coord">E<!-- -->2</span><=
+span class=3D"jsx-70e7e3c2411fa9bb square-index">51</span></div><div class=
+=3D"jsx-70e7e3c2411fa9bb square light-square"><div class=3D"jsx-70e7e3c2411=
+fa9bb bit-overlay"></div><span class=3D"jsx-70e7e3c2411fa9bb square-coord">=
+D<!-- -->2</span><span class=3D"jsx-70e7e3c2411fa9bb square-index">52</span=
+></div><div class=3D"jsx-70e7e3c2411fa9bb square dark-square"><div class=3D=
+"jsx-70e7e3c2411fa9bb bit-overlay"></div><span class=3D"jsx-70e7e3c2411fa9b=
+b square-coord">C<!-- -->2</span><span class=3D"jsx-70e7e3c2411fa9bb square=
+-index">53</span></div><div class=3D"jsx-70e7e3c2411fa9bb square light-squa=
+re"><div class=3D"jsx-70e7e3c2411fa9bb bit-overlay"></div><span class=3D"js=
+x-70e7e3c2411fa9bb square-coord">B<!-- -->2</span><span class=3D"jsx-70e7e3=
+c2411fa9bb square-index">54</span></div><div class=3D"jsx-70e7e3c2411fa9bb =
+square dark-square"><div class=3D"jsx-70e7e3c2411fa9bb bit-overlay"></div><=
+span class=3D"jsx-70e7e3c2411fa9bb square-coord">A<!-- -->2</span><span cla=
+ss=3D"jsx-70e7e3c2411fa9bb square-index">55</span></div><div class=3D"jsx-7=
+0e7e3c2411fa9bb square dark-square"><div class=3D"jsx-70e7e3c2411fa9bb bit-=
+overlay"></div><span class=3D"jsx-70e7e3c2411fa9bb square-coord">H<!-- -->1=
+</span><span class=3D"jsx-70e7e3c2411fa9bb square-index">56</span></div><di=
+v class=3D"jsx-70e7e3c2411fa9bb square light-square"><div class=3D"jsx-70e7=
+e3c2411fa9bb bit-overlay"></div><span class=3D"jsx-70e7e3c2411fa9bb square-=
+coord">G<!-- -->1</span><span class=3D"jsx-70e7e3c2411fa9bb square-index">5=
+7</span></div><div class=3D"jsx-70e7e3c2411fa9bb square dark-square"><div c=
+lass=3D"jsx-70e7e3c2411fa9bb bit-overlay"></div><span class=3D"jsx-70e7e3c2=
+411fa9bb square-coord">F<!-- -->1</span><span class=3D"jsx-70e7e3c2411fa9bb=
+ square-index">58</span></div><div class=3D"jsx-70e7e3c2411fa9bb square lig=
+ht-square"><div class=3D"jsx-70e7e3c2411fa9bb bit-overlay"></div><span clas=
+s=3D"jsx-70e7e3c2411fa9bb square-coord">E<!-- -->1</span><span class=3D"jsx=
+-70e7e3c2411fa9bb square-index">59</span></div><div class=3D"jsx-70e7e3c241=
+1fa9bb square dark-square"><div class=3D"jsx-70e7e3c2411fa9bb bit-overlay">=
+</div><span class=3D"jsx-70e7e3c2411fa9bb square-coord">D<!-- -->1</span><s=
+pan class=3D"jsx-70e7e3c2411fa9bb square-index">60</span></div><div class=
+=3D"jsx-70e7e3c2411fa9bb square light-square"><div class=3D"jsx-70e7e3c2411=
+fa9bb bit-overlay"></div><span class=3D"jsx-70e7e3c2411fa9bb square-coord">=
+C<!-- -->1</span><span class=3D"jsx-70e7e3c2411fa9bb square-index">61</span=
+></div><div class=3D"jsx-70e7e3c2411fa9bb square dark-square"><div class=3D=
+"jsx-70e7e3c2411fa9bb bit-overlay"></div><span class=3D"jsx-70e7e3c2411fa9b=
+b square-coord">B<!-- -->1</span><span class=3D"jsx-70e7e3c2411fa9bb square=
+-index">62</span></div><div class=3D"jsx-70e7e3c2411fa9bb square light-squa=
+re"><div class=3D"jsx-70e7e3c2411fa9bb bit-overlay"></div><span class=3D"js=
+x-70e7e3c2411fa9bb square-coord">A<!-- -->1</span><span class=3D"jsx-70e7e3=
+c2411fa9bb square-index">63</span></div></div></div><div class=3D"jsx-70e7e=
+3c2411fa9bb bitboard-info"><div class=3D"jsx-70e7e3c2411fa9bb info-item"><s=
+pan class=3D"jsx-70e7e3c2411fa9bb info-label">Binary: </span><span class=3D=
+"jsx-70e7e3c2411fa9bb info-value binary">00000000 00000000 00000000 0000000=
+0 00000000 11111110 00000000 00000000</span></div><div class=3D"jsx-70e7e3c=
+2411fa9bb info-item"><span class=3D"jsx-70e7e3c2411fa9bb info-label">Set bi=
+ts: </span><span class=3D"jsx-70e7e3c2411fa9bb info-value">17, 18, 19, 20, =
+21, 22, 23 &nbsp; &nbsp; &nbsp;</span></div></div></div></div><p>Without bi=
+tboards, a program has to perform many more (magnitudes more!) instructions=
+. The equivalent code, without bitwise operations, would look something lik=
+e this:</p><pre><div class=3D"jsx-1290c20ab25545a6 code"><div style=3D"colo=
+r:#393A34;background-color:#f6f8fa" class=3D"jsx-1290c20ab25545a6 prism-cod=
+e language-js"><div class=3D"jsx-1290c20ab25545a6 token-line code-line " st=
+yle=3D"color:#393A34"><span class=3D"jsx-1290c20ab25545a6">attacks </span><=
+span class=3D"jsx-1290c20ab25545a6" style=3D"color:#393A34">=3D</span><span=
+ class=3D"jsx-1290c20ab25545a6"> </span><span class=3D"jsx-1290c20ab25545a6=
+" style=3D"color:#393A34">[</span><span class=3D"jsx-1290c20ab25545a6" styl=
+e=3D"color:#393A34">]</span><span class=3D"jsx-1290c20ab25545a6" style=3D"c=
+olor:#393A34">;</span><span class=3D"jsx-1290c20ab25545a6"></span></div><di=
+v class=3D"jsx-1290c20ab25545a6 token-line code-line " style=3D"color:#393A=
+34"><span class=3D"jsx-1290c20ab25545a6"></span><span class=3D"jsx-1290c20a=
+b25545a6" style=3D"color:#00009f">for</span><span class=3D"jsx-1290c20ab255=
+45a6"> </span><span class=3D"jsx-1290c20ab25545a6" style=3D"color:#393A34">=
+(</span><span class=3D"jsx-1290c20ab25545a6">i </span><span class=3D"jsx-12=
+90c20ab25545a6" style=3D"color:#393A34">=3D</span><span class=3D"jsx-1290c2=
+0ab25545a6"> </span><span class=3D"jsx-1290c20ab25545a6" style=3D"color:#36=
+acaa">0</span><span class=3D"jsx-1290c20ab25545a6" style=3D"color:#393A34">=
+;</span><span class=3D"jsx-1290c20ab25545a6"> i </span><span class=3D"jsx-1=
+290c20ab25545a6" style=3D"color:#393A34">&lt;</span><span class=3D"jsx-1290=
+c20ab25545a6"> </span><span class=3D"jsx-1290c20ab25545a6" style=3D"color:#=
+36acaa">64</span><span class=3D"jsx-1290c20ab25545a6" style=3D"color:#393A3=
+4">;</span><span class=3D"jsx-1290c20ab25545a6"> i</span><span class=3D"jsx=
+-1290c20ab25545a6" style=3D"color:#393A34">++</span><span class=3D"jsx-1290=
+c20ab25545a6" style=3D"color:#393A34">)</span><span class=3D"jsx-1290c20ab2=
+5545a6"> </span><span class=3D"jsx-1290c20ab25545a6" style=3D"color:#393A34=
+">{</span><span class=3D"jsx-1290c20ab25545a6"></span></div><div class=3D"j=
+sx-1290c20ab25545a6 token-line code-line " style=3D"color:#393A34"><span cl=
+ass=3D"jsx-1290c20ab25545a6">  piece </span><span class=3D"jsx-1290c20ab255=
+45a6" style=3D"color:#393A34">=3D</span><span class=3D"jsx-1290c20ab25545a6=
+"> board</span><span class=3D"jsx-1290c20ab25545a6" style=3D"color:#393A34"=
+>.</span><span class=3D"jsx-1290c20ab25545a6" style=3D"color:#d73a49">getPi=
+ece</span><span class=3D"jsx-1290c20ab25545a6" style=3D"color:#393A34">(</s=
+pan><span class=3D"jsx-1290c20ab25545a6">i</span><span class=3D"jsx-1290c20=
+ab25545a6" style=3D"color:#393A34">)</span><span class=3D"jsx-1290c20ab2554=
+5a6" style=3D"color:#393A34">;</span><span class=3D"jsx-1290c20ab25545a6"><=
+/span></div><div class=3D"jsx-1290c20ab25545a6 token-line code-line " style=
+=3D"color:#393A34"><span class=3D"jsx-1290c20ab25545a6">  </span><span clas=
+s=3D"jsx-1290c20ab25545a6" style=3D"color:#00009f">if</span><span class=3D"=
+jsx-1290c20ab25545a6"> </span><span class=3D"jsx-1290c20ab25545a6" style=3D=
+"color:#393A34">(</span><span class=3D"jsx-1290c20ab25545a6">piece </span><=
+span class=3D"jsx-1290c20ab25545a6" style=3D"color:#393A34">=3D=3D=3D</span=
+><span class=3D"jsx-1290c20ab25545a6"> </span><span class=3D"jsx-1290c20ab2=
+5545a6" style=3D"color:#e3116c">"P"</span><span class=3D"jsx-1290c20ab25545=
+a6" style=3D"color:#393A34">)</span><span class=3D"jsx-1290c20ab25545a6"> <=
+/span><span class=3D"jsx-1290c20ab25545a6" style=3D"color:#393A34">{</span>=
+<span class=3D"jsx-1290c20ab25545a6"> </span><span class=3D"jsx-1290c20ab25=
+545a6" style=3D"color:#999988;font-style:italic">// White pawn</span><span =
+class=3D"jsx-1290c20ab25545a6"></span></div><div class=3D"jsx-1290c20ab2554=
+5a6 token-line code-line " style=3D"color:#393A34"><span class=3D"jsx-1290c=
+20ab25545a6" style=3D"display:inline-block">
+</span></div><div class=3D"jsx-1290c20ab25545a6 token-line code-line " styl=
+e=3D"color:#393A34"><span class=3D"jsx-1290c20ab25545a6">    </span><span c=
+lass=3D"jsx-1290c20ab25545a6" style=3D"color:#999988;font-style:italic">// =
+Check left attack (forward-left)</span><span class=3D"jsx-1290c20ab25545a6"=
+></span></div><div class=3D"jsx-1290c20ab25545a6 token-line code-line " sty=
+le=3D"color:#393A34"><span class=3D"jsx-1290c20ab25545a6">    </span><span =
+class=3D"jsx-1290c20ab25545a6" style=3D"color:#00009f">if</span><span class=
+=3D"jsx-1290c20ab25545a6"> </span><span class=3D"jsx-1290c20ab25545a6" styl=
+e=3D"color:#393A34">(</span><span class=3D"jsx-1290c20ab25545a6" style=3D"c=
+olor:#393A34">!</span><span class=3D"jsx-1290c20ab25545a6">board</span><spa=
+n class=3D"jsx-1290c20ab25545a6" style=3D"color:#393A34">.</span><span clas=
+s=3D"jsx-1290c20ab25545a6" style=3D"color:#d73a49">isOnFileA</span><span cl=
+ass=3D"jsx-1290c20ab25545a6" style=3D"color:#393A34">(</span><span class=3D=
+"jsx-1290c20ab25545a6">i</span><span class=3D"jsx-1290c20ab25545a6" style=
+=3D"color:#393A34">)</span><span class=3D"jsx-1290c20ab25545a6" style=3D"co=
+lor:#393A34">)</span><span class=3D"jsx-1290c20ab25545a6"> </span><span cla=
+ss=3D"jsx-1290c20ab25545a6" style=3D"color:#393A34">{</span><span class=3D"=
+jsx-1290c20ab25545a6"></span></div><div class=3D"jsx-1290c20ab25545a6 token=
+-line code-line " style=3D"color:#393A34"><span class=3D"jsx-1290c20ab25545=
+a6">        attacks</span><span class=3D"jsx-1290c20ab25545a6" style=3D"col=
+or:#393A34">.</span><span class=3D"jsx-1290c20ab25545a6" style=3D"color:#d7=
+3a49">push</span><span class=3D"jsx-1290c20ab25545a6" style=3D"color:#393A3=
+4">(</span><span class=3D"jsx-1290c20ab25545a6">i </span><span class=3D"jsx=
+-1290c20ab25545a6" style=3D"color:#393A34">+</span><span class=3D"jsx-1290c=
+20ab25545a6"> </span><span class=3D"jsx-1290c20ab25545a6" style=3D"color:#3=
+6acaa">7</span><span class=3D"jsx-1290c20ab25545a6" style=3D"color:#393A34"=
+>)</span><span class=3D"jsx-1290c20ab25545a6" style=3D"color:#393A34">;</sp=
+an><span class=3D"jsx-1290c20ab25545a6"></span></div><div class=3D"jsx-1290=
+c20ab25545a6 token-line code-line " style=3D"color:#393A34"><span class=3D"=
+jsx-1290c20ab25545a6">    </span><span class=3D"jsx-1290c20ab25545a6" style=
+=3D"color:#393A34">}</span><span class=3D"jsx-1290c20ab25545a6"></span></di=
+v><div class=3D"jsx-1290c20ab25545a6 token-line code-line " style=3D"color:=
+#393A34"><span class=3D"jsx-1290c20ab25545a6">    </span></div><div class=
+=3D"jsx-1290c20ab25545a6 token-line code-line " style=3D"color:#393A34"><sp=
+an class=3D"jsx-1290c20ab25545a6">    </span><span class=3D"jsx-1290c20ab25=
+545a6" style=3D"color:#999988;font-style:italic">// Check right attack (for=
+ward-right)</span><span class=3D"jsx-1290c20ab25545a6"></span></div><div cl=
+ass=3D"jsx-1290c20ab25545a6 token-line code-line " style=3D"color:#393A34">=
+<span class=3D"jsx-1290c20ab25545a6">    </span><span class=3D"jsx-1290c20a=
+b25545a6" style=3D"color:#00009f">if</span><span class=3D"jsx-1290c20ab2554=
+5a6"> </span><span class=3D"jsx-1290c20ab25545a6" style=3D"color:#393A34">(=
+</span><span class=3D"jsx-1290c20ab25545a6" style=3D"color:#393A34">!</span=
+><span class=3D"jsx-1290c20ab25545a6">board</span><span class=3D"jsx-1290c2=
+0ab25545a6" style=3D"color:#393A34">.</span><span class=3D"jsx-1290c20ab255=
+45a6" style=3D"color:#d73a49">isOnFileH</span><span class=3D"jsx-1290c20ab2=
+5545a6" style=3D"color:#393A34">(</span><span class=3D"jsx-1290c20ab25545a6=
+">i</span><span class=3D"jsx-1290c20ab25545a6" style=3D"color:#393A34">)</s=
+pan><span class=3D"jsx-1290c20ab25545a6" style=3D"color:#393A34">)</span><s=
+pan class=3D"jsx-1290c20ab25545a6"> </span><span class=3D"jsx-1290c20ab2554=
+5a6" style=3D"color:#393A34">{</span><span class=3D"jsx-1290c20ab25545a6"><=
+/span></div><div class=3D"jsx-1290c20ab25545a6 token-line code-line " style=
+=3D"color:#393A34"><span class=3D"jsx-1290c20ab25545a6">        attacks</sp=
+an><span class=3D"jsx-1290c20ab25545a6" style=3D"color:#393A34">.</span><sp=
+an class=3D"jsx-1290c20ab25545a6" style=3D"color:#d73a49">push</span><span =
+class=3D"jsx-1290c20ab25545a6" style=3D"color:#393A34">(</span><span class=
+=3D"jsx-1290c20ab25545a6">i </span><span class=3D"jsx-1290c20ab25545a6" sty=
+le=3D"color:#393A34">+</span><span class=3D"jsx-1290c20ab25545a6"> </span><=
+span class=3D"jsx-1290c20ab25545a6" style=3D"color:#36acaa">9</span><span c=
+lass=3D"jsx-1290c20ab25545a6" style=3D"color:#393A34">)</span><span class=
+=3D"jsx-1290c20ab25545a6" style=3D"color:#393A34">;</span><span class=3D"js=
+x-1290c20ab25545a6"></span></div><div class=3D"jsx-1290c20ab25545a6 token-l=
+ine code-line " style=3D"color:#393A34"><span class=3D"jsx-1290c20ab25545a6=
+">    </span><span class=3D"jsx-1290c20ab25545a6" style=3D"color:#393A34">}=
+</span><span class=3D"jsx-1290c20ab25545a6"></span></div><div class=3D"jsx-=
+1290c20ab25545a6 token-line code-line " style=3D"color:#393A34"><span class=
+=3D"jsx-1290c20ab25545a6">  </span><span class=3D"jsx-1290c20ab25545a6" sty=
+le=3D"color:#393A34">}</span><span class=3D"jsx-1290c20ab25545a6"></span></=
+div><div class=3D"jsx-1290c20ab25545a6 token-line code-line " style=3D"colo=
+r:#393A34"><span class=3D"jsx-1290c20ab25545a6"></span><span class=3D"jsx-1=
+290c20ab25545a6" style=3D"color:#393A34">}</span></div></div></div></pre><p=
+>And I haven't included the board class, or the data structures being opera=
+ted on behind-the-scenes.</p><p>I've got one more example where we generate=
+ a knight's attacks. We start with the position of a knight on the board (e=
+ncoded in a bitboard) and calculate all the psuedo-legal knight attacks. Re=
+member: the result is <em>also</em> a bitboard.</p><p>Inside a chess engine=
+, we would then use more bitwise operations to see if those positions were =
+occupied so we could evaluated the strength of each potential move.</p><p>T=
+he "not file" masks here are used to prevent invalid wraparounds. From <cod=
+e>g5</code>, these masks stop the knight from moving to <code>l6</code> and=
+ <code>l4</code> (which aren't real squares).</p><div class=3D"jsx-70e7e3c2=
+411fa9bb visualizer-container"><pre class=3D"jsx-70e7e3c2411fa9bb"><div cla=
+ss=3D"jsx-1290c20ab25545a6 code"><div style=3D"color:#393A34;background-col=
+or:#f6f8fa" class=3D"jsx-1290c20ab25545a6 prism-code language-javascript"><=
+div class=3D"jsx-1290c20ab25545a6 token-line code-line " style=3D"color:#39=
+3A34"><span class=3D"jsx-1290c20ab25545a6" style=3D"color:#999988;font-styl=
+e:italic">// Knight attacks from G5</span><span class=3D"jsx-1290c20ab25545=
+a6"></span></div><div class=3D"jsx-1290c20ab25545a6 token-line code-line hi=
+ghlighted" style=3D"color:#393A34"><span class=3D"jsx-1290c20ab25545a6"></s=
+pan><span class=3D"jsx-1290c20ab25545a6" style=3D"color:#36acaa">KNIGHT_POS=
+</span><span class=3D"jsx-1290c20ab25545a6"> </span><span class=3D"jsx-1290=
+c20ab25545a6" style=3D"color:#393A34">=3D</span><span class=3D"jsx-1290c20a=
+b25545a6"> </span><span class=3D"jsx-1290c20ab25545a6" style=3D"color:#36ac=
+aa">0x0000000002000000</span><span class=3D"jsx-1290c20ab25545a6" style=3D"=
+color:#393A34">;</span><span class=3D"jsx-1290c20ab25545a6"></span></div><d=
+iv class=3D"jsx-1290c20ab25545a6 token-line code-line " style=3D"color:#393=
+A34"><span class=3D"jsx-1290c20ab25545a6"></span><span class=3D"jsx-1290c20=
+ab25545a6" style=3D"color:#36acaa">FILE_A</span><span class=3D"jsx-1290c20a=
+b25545a6"> </span><span class=3D"jsx-1290c20ab25545a6" style=3D"color:#393A=
+34">=3D</span><span class=3D"jsx-1290c20ab25545a6"> </span><span class=3D"j=
+sx-1290c20ab25545a6" style=3D"color:#36acaa">0x0101010101010101</span><span=
+ class=3D"jsx-1290c20ab25545a6" style=3D"color:#393A34">;</span><span class=
+=3D"jsx-1290c20ab25545a6"></span></div><div class=3D"jsx-1290c20ab25545a6 t=
+oken-line code-line " style=3D"color:#393A34"><span class=3D"jsx-1290c20ab2=
+5545a6"></span><span class=3D"jsx-1290c20ab25545a6" style=3D"color:#36acaa"=
+>FILE_H</span><span class=3D"jsx-1290c20ab25545a6"> </span><span class=3D"j=
+sx-1290c20ab25545a6" style=3D"color:#393A34">=3D</span><span class=3D"jsx-1=
+290c20ab25545a6"> </span><span class=3D"jsx-1290c20ab25545a6" style=3D"colo=
+r:#36acaa">0x8080808080808080</span><span class=3D"jsx-1290c20ab25545a6" st=
+yle=3D"color:#393A34">;</span><span class=3D"jsx-1290c20ab25545a6"></span><=
+/div><div class=3D"jsx-1290c20ab25545a6 token-line code-line " style=3D"col=
+or:#393A34"><span class=3D"jsx-1290c20ab25545a6"></span><span class=3D"jsx-=
+1290c20ab25545a6" style=3D"color:#36acaa">FILE_AB</span><span class=3D"jsx-=
+1290c20ab25545a6"> </span><span class=3D"jsx-1290c20ab25545a6" style=3D"col=
+or:#393A34">=3D</span><span class=3D"jsx-1290c20ab25545a6"> </span><span cl=
+ass=3D"jsx-1290c20ab25545a6" style=3D"color:#36acaa">FILE_A</span><span cla=
+ss=3D"jsx-1290c20ab25545a6"> </span><span class=3D"jsx-1290c20ab25545a6" st=
+yle=3D"color:#393A34">|</span><span class=3D"jsx-1290c20ab25545a6"> </span>=
+<span class=3D"jsx-1290c20ab25545a6" style=3D"color:#393A34">(</span><span =
+class=3D"jsx-1290c20ab25545a6" style=3D"color:#36acaa">FILE_A</span><span c=
+lass=3D"jsx-1290c20ab25545a6"> </span><span class=3D"jsx-1290c20ab25545a6" =
+style=3D"color:#393A34">&lt;&lt;</span><span class=3D"jsx-1290c20ab25545a6"=
+> </span><span class=3D"jsx-1290c20ab25545a6" style=3D"color:#36acaa">1</sp=
+an><span class=3D"jsx-1290c20ab25545a6" style=3D"color:#393A34">)</span><sp=
+an class=3D"jsx-1290c20ab25545a6" style=3D"color:#393A34">;</span><span cla=
+ss=3D"jsx-1290c20ab25545a6"></span></div><div class=3D"jsx-1290c20ab25545a6=
+ token-line code-line " style=3D"color:#393A34"><span class=3D"jsx-1290c20a=
+b25545a6"></span><span class=3D"jsx-1290c20ab25545a6" style=3D"color:#36aca=
+a">FILE_GH</span><span class=3D"jsx-1290c20ab25545a6"> </span><span class=
+=3D"jsx-1290c20ab25545a6" style=3D"color:#393A34">=3D</span><span class=3D"=
+jsx-1290c20ab25545a6"> </span><span class=3D"jsx-1290c20ab25545a6" style=3D=
+"color:#36acaa">FILE_H</span><span class=3D"jsx-1290c20ab25545a6"> </span><=
+span class=3D"jsx-1290c20ab25545a6" style=3D"color:#393A34">|</span><span c=
+lass=3D"jsx-1290c20ab25545a6"> </span><span class=3D"jsx-1290c20ab25545a6" =
+style=3D"color:#393A34">(</span><span class=3D"jsx-1290c20ab25545a6" style=
+=3D"color:#36acaa">FILE_H</span><span class=3D"jsx-1290c20ab25545a6"> </spa=
+n><span class=3D"jsx-1290c20ab25545a6" style=3D"color:#393A34">&gt;&gt;</sp=
+an><span class=3D"jsx-1290c20ab25545a6"> </span><span class=3D"jsx-1290c20a=
+b25545a6" style=3D"color:#36acaa">1</span><span class=3D"jsx-1290c20ab25545=
+a6" style=3D"color:#393A34">)</span><span class=3D"jsx-1290c20ab25545a6" st=
+yle=3D"color:#393A34">;</span><span class=3D"jsx-1290c20ab25545a6"></span><=
+/div><div class=3D"jsx-1290c20ab25545a6 token-line code-line " style=3D"col=
+or:#393A34"><span class=3D"jsx-1290c20ab25545a6">attacks </span><span class=
+=3D"jsx-1290c20ab25545a6" style=3D"color:#393A34">=3D</span><span class=3D"=
+jsx-1290c20ab25545a6"> </span><span class=3D"jsx-1290c20ab25545a6" style=3D=
+"color:#393A34">(</span><span class=3D"jsx-1290c20ab25545a6" style=3D"color=
+:#36acaa">KNIGHT_POS</span><span class=3D"jsx-1290c20ab25545a6"> </span><sp=
+an class=3D"jsx-1290c20ab25545a6" style=3D"color:#393A34">&lt;&lt;</span><s=
+pan class=3D"jsx-1290c20ab25545a6"> </span><span class=3D"jsx-1290c20ab2554=
+5a6" style=3D"color:#36acaa">17</span><span class=3D"jsx-1290c20ab25545a6">=
+ </span><span class=3D"jsx-1290c20ab25545a6" style=3D"color:#393A34">&amp;<=
+/span><span class=3D"jsx-1290c20ab25545a6"> </span><span class=3D"jsx-1290c=
+20ab25545a6" style=3D"color:#393A34">~</span><span class=3D"jsx-1290c20ab25=
+545a6" style=3D"color:#36acaa">FILE_A</span><span class=3D"jsx-1290c20ab255=
+45a6" style=3D"color:#393A34">)</span><span class=3D"jsx-1290c20ab25545a6">=
+ </span><span class=3D"jsx-1290c20ab25545a6" style=3D"color:#393A34">|</spa=
+n><span class=3D"jsx-1290c20ab25545a6"></span></div><div class=3D"jsx-1290c=
+20ab25545a6 token-line code-line " style=3D"color:#393A34"><span class=3D"j=
+sx-1290c20ab25545a6">  </span><span class=3D"jsx-1290c20ab25545a6" style=3D=
+"color:#393A34">(</span><span class=3D"jsx-1290c20ab25545a6" style=3D"color=
+:#36acaa">KNIGHT_POS</span><span class=3D"jsx-1290c20ab25545a6"> </span><sp=
+an class=3D"jsx-1290c20ab25545a6" style=3D"color:#393A34">&lt;&lt;</span><s=
+pan class=3D"jsx-1290c20ab25545a6"> </span><span class=3D"jsx-1290c20ab2554=
+5a6" style=3D"color:#36acaa">15</span><span class=3D"jsx-1290c20ab25545a6">=
+ </span><span class=3D"jsx-1290c20ab25545a6" style=3D"color:#393A34">&amp;<=
+/span><span class=3D"jsx-1290c20ab25545a6"> </span><span class=3D"jsx-1290c=
+20ab25545a6" style=3D"color:#393A34">~</span><span class=3D"jsx-1290c20ab25=
+545a6" style=3D"color:#36acaa">FILE_H</span><span class=3D"jsx-1290c20ab255=
+45a6" style=3D"color:#393A34">)</span><span class=3D"jsx-1290c20ab25545a6">=
+ </span><span class=3D"jsx-1290c20ab25545a6" style=3D"color:#393A34">|</spa=
+n><span class=3D"jsx-1290c20ab25545a6"></span></div><div class=3D"jsx-1290c=
+20ab25545a6 token-line code-line " style=3D"color:#393A34"><span class=3D"j=
+sx-1290c20ab25545a6">  </span><span class=3D"jsx-1290c20ab25545a6" style=3D=
+"color:#393A34">(</span><span class=3D"jsx-1290c20ab25545a6" style=3D"color=
+:#36acaa">KNIGHT_POS</span><span class=3D"jsx-1290c20ab25545a6"> </span><sp=
+an class=3D"jsx-1290c20ab25545a6" style=3D"color:#393A34">&lt;&lt;</span><s=
+pan class=3D"jsx-1290c20ab25545a6"> </span><span class=3D"jsx-1290c20ab2554=
+5a6" style=3D"color:#36acaa">10</span><span class=3D"jsx-1290c20ab25545a6">=
+ </span><span class=3D"jsx-1290c20ab25545a6" style=3D"color:#393A34">&amp;<=
+/span><span class=3D"jsx-1290c20ab25545a6"> </span><span class=3D"jsx-1290c=
+20ab25545a6" style=3D"color:#393A34">~</span><span class=3D"jsx-1290c20ab25=
+545a6" style=3D"color:#36acaa">FILE_AB</span><span class=3D"jsx-1290c20ab25=
+545a6" style=3D"color:#393A34">)</span><span class=3D"jsx-1290c20ab25545a6"=
+> </span><span class=3D"jsx-1290c20ab25545a6" style=3D"color:#393A34">|</sp=
+an><span class=3D"jsx-1290c20ab25545a6"></span></div><div class=3D"jsx-1290=
+c20ab25545a6 token-line code-line " style=3D"color:#393A34"><span class=3D"=
+jsx-1290c20ab25545a6">  </span><span class=3D"jsx-1290c20ab25545a6" style=
+=3D"color:#393A34">(</span><span class=3D"jsx-1290c20ab25545a6" style=3D"co=
+lor:#36acaa">KNIGHT_POS</span><span class=3D"jsx-1290c20ab25545a6"> </span>=
+<span class=3D"jsx-1290c20ab25545a6" style=3D"color:#393A34">&lt;&lt;</span=
+><span class=3D"jsx-1290c20ab25545a6"> </span><span class=3D"jsx-1290c20ab2=
+5545a6" style=3D"color:#36acaa">6</span><span class=3D"jsx-1290c20ab25545a6=
+"> </span><span class=3D"jsx-1290c20ab25545a6" style=3D"color:#393A34">&amp=
+;</span><span class=3D"jsx-1290c20ab25545a6"> </span><span class=3D"jsx-129=
+0c20ab25545a6" style=3D"color:#393A34">~</span><span class=3D"jsx-1290c20ab=
+25545a6" style=3D"color:#36acaa">FILE_GH</span><span class=3D"jsx-1290c20ab=
+25545a6" style=3D"color:#393A34">)</span><span class=3D"jsx-1290c20ab25545a=
+6"> </span><span class=3D"jsx-1290c20ab25545a6" style=3D"color:#393A34">|</=
+span><span class=3D"jsx-1290c20ab25545a6"></span></div><div class=3D"jsx-12=
+90c20ab25545a6 token-line code-line " style=3D"color:#393A34"><span class=
+=3D"jsx-1290c20ab25545a6">  </span><span class=3D"jsx-1290c20ab25545a6" sty=
+le=3D"color:#393A34">(</span><span class=3D"jsx-1290c20ab25545a6" style=3D"=
+color:#36acaa">KNIGHT_POS</span><span class=3D"jsx-1290c20ab25545a6"> </spa=
+n><span class=3D"jsx-1290c20ab25545a6" style=3D"color:#393A34">&gt;&gt;</sp=
+an><span class=3D"jsx-1290c20ab25545a6"> </span><span class=3D"jsx-1290c20a=
+b25545a6" style=3D"color:#36acaa">17</span><span class=3D"jsx-1290c20ab2554=
+5a6"> </span><span class=3D"jsx-1290c20ab25545a6" style=3D"color:#393A34">&=
+amp;</span><span class=3D"jsx-1290c20ab25545a6"> </span><span class=3D"jsx-=
+1290c20ab25545a6" style=3D"color:#393A34">~</span><span class=3D"jsx-1290c2=
+0ab25545a6" style=3D"color:#36acaa">FILE_H</span><span class=3D"jsx-1290c20=
+ab25545a6" style=3D"color:#393A34">)</span><span class=3D"jsx-1290c20ab2554=
+5a6"> </span><span class=3D"jsx-1290c20ab25545a6" style=3D"color:#393A34">|=
+</span><span class=3D"jsx-1290c20ab25545a6"></span></div><div class=3D"jsx-=
+1290c20ab25545a6 token-line code-line " style=3D"color:#393A34"><span class=
+=3D"jsx-1290c20ab25545a6">  </span><span class=3D"jsx-1290c20ab25545a6" sty=
+le=3D"color:#393A34">(</span><span class=3D"jsx-1290c20ab25545a6" style=3D"=
+color:#36acaa">KNIGHT_POS</span><span class=3D"jsx-1290c20ab25545a6"> </spa=
+n><span class=3D"jsx-1290c20ab25545a6" style=3D"color:#393A34">&gt;&gt;</sp=
+an><span class=3D"jsx-1290c20ab25545a6"> </span><span class=3D"jsx-1290c20a=
+b25545a6" style=3D"color:#36acaa">15</span><span class=3D"jsx-1290c20ab2554=
+5a6"> </span><span class=3D"jsx-1290c20ab25545a6" style=3D"color:#393A34">&=
+amp;</span><span class=3D"jsx-1290c20ab25545a6"> </span><span class=3D"jsx-=
+1290c20ab25545a6" style=3D"color:#393A34">~</span><span class=3D"jsx-1290c2=
+0ab25545a6" style=3D"color:#36acaa">FILE_A</span><span class=3D"jsx-1290c20=
+ab25545a6" style=3D"color:#393A34">)</span><span class=3D"jsx-1290c20ab2554=
+5a6"> </span><span class=3D"jsx-1290c20ab25545a6" style=3D"color:#393A34">|=
+</span><span class=3D"jsx-1290c20ab25545a6"></span></div><div class=3D"jsx-=
+1290c20ab25545a6 token-line code-line " style=3D"color:#393A34"><span class=
+=3D"jsx-1290c20ab25545a6">  </span><span class=3D"jsx-1290c20ab25545a6" sty=
+le=3D"color:#393A34">(</span><span class=3D"jsx-1290c20ab25545a6" style=3D"=
+color:#36acaa">KNIGHT_POS</span><span class=3D"jsx-1290c20ab25545a6"> </spa=
+n><span class=3D"jsx-1290c20ab25545a6" style=3D"color:#393A34">&gt;&gt;</sp=
+an><span class=3D"jsx-1290c20ab25545a6"> </span><span class=3D"jsx-1290c20a=
+b25545a6" style=3D"color:#36acaa">10</span><span class=3D"jsx-1290c20ab2554=
+5a6"> </span><span class=3D"jsx-1290c20ab25545a6" style=3D"color:#393A34">&=
+amp;</span><span class=3D"jsx-1290c20ab25545a6"> </span><span class=3D"jsx-=
+1290c20ab25545a6" style=3D"color:#393A34">~</span><span class=3D"jsx-1290c2=
+0ab25545a6" style=3D"color:#36acaa">FILE_GH</span><span class=3D"jsx-1290c2=
+0ab25545a6" style=3D"color:#393A34">)</span><span class=3D"jsx-1290c20ab255=
+45a6"> </span><span class=3D"jsx-1290c20ab25545a6" style=3D"color:#393A34">=
+|</span><span class=3D"jsx-1290c20ab25545a6"></span></div><div class=3D"jsx=
+-1290c20ab25545a6 token-line code-line " style=3D"color:#393A34"><span clas=
+s=3D"jsx-1290c20ab25545a6">  </span><span class=3D"jsx-1290c20ab25545a6" st=
+yle=3D"color:#393A34">(</span><span class=3D"jsx-1290c20ab25545a6" style=3D=
+"color:#36acaa">KNIGHT_POS</span><span class=3D"jsx-1290c20ab25545a6"> </sp=
+an><span class=3D"jsx-1290c20ab25545a6" style=3D"color:#393A34">&gt;&gt;</s=
+pan><span class=3D"jsx-1290c20ab25545a6"> </span><span class=3D"jsx-1290c20=
+ab25545a6" style=3D"color:#36acaa">6</span><span class=3D"jsx-1290c20ab2554=
+5a6"> </span><span class=3D"jsx-1290c20ab25545a6" style=3D"color:#393A34">&=
+amp;</span><span class=3D"jsx-1290c20ab25545a6"> </span><span class=3D"jsx-=
+1290c20ab25545a6" style=3D"color:#393A34">~</span><span class=3D"jsx-1290c2=
+0ab25545a6" style=3D"color:#36acaa">FILE_AB</span><span class=3D"jsx-1290c2=
+0ab25545a6" style=3D"color:#393A34">)</span><span class=3D"jsx-1290c20ab255=
+45a6" style=3D"color:#393A34">;</span></div></div></div></pre><div class=3D=
+"jsx-70e7e3c2411fa9bb board-container"><div class=3D"jsx-70e7e3c2411fa9bb c=
+hessboard"><div class=3D"jsx-70e7e3c2411fa9bb board-grid"><div class=3D"jsx=
+-70e7e3c2411fa9bb square light-square"><div class=3D"jsx-70e7e3c2411fa9bb b=
+it-overlay"></div><span class=3D"jsx-70e7e3c2411fa9bb square-coord">H<!-- -=
+->8</span><span class=3D"jsx-70e7e3c2411fa9bb square-index">0</span></div><=
+div class=3D"jsx-70e7e3c2411fa9bb square dark-square"><div class=3D"jsx-70e=
+7e3c2411fa9bb bit-overlay"></div><span class=3D"jsx-70e7e3c2411fa9bb square=
+-coord">G<!-- -->8</span><span class=3D"jsx-70e7e3c2411fa9bb square-index">=
+1</span></div><div class=3D"jsx-70e7e3c2411fa9bb square light-square"><div =
+class=3D"jsx-70e7e3c2411fa9bb bit-overlay"></div><span class=3D"jsx-70e7e3c=
+2411fa9bb square-coord">F<!-- -->8</span><span class=3D"jsx-70e7e3c2411fa9b=
+b square-index">2</span></div><div class=3D"jsx-70e7e3c2411fa9bb square dar=
+k-square"><div class=3D"jsx-70e7e3c2411fa9bb bit-overlay"></div><span class=
+=3D"jsx-70e7e3c2411fa9bb square-coord">E<!-- -->8</span><span class=3D"jsx-=
+70e7e3c2411fa9bb square-index">3</span></div><div class=3D"jsx-70e7e3c2411f=
+a9bb square light-square"><div class=3D"jsx-70e7e3c2411fa9bb bit-overlay"><=
+/div><span class=3D"jsx-70e7e3c2411fa9bb square-coord">D<!-- -->8</span><sp=
+an class=3D"jsx-70e7e3c2411fa9bb square-index">4</span></div><div class=3D"=
+jsx-70e7e3c2411fa9bb square dark-square"><div class=3D"jsx-70e7e3c2411fa9bb=
+ bit-overlay"></div><span class=3D"jsx-70e7e3c2411fa9bb square-coord">C<!--=
+ -->8</span><span class=3D"jsx-70e7e3c2411fa9bb square-index">5</span></div=
+><div class=3D"jsx-70e7e3c2411fa9bb square light-square"><div class=3D"jsx-=
+70e7e3c2411fa9bb bit-overlay"></div><span class=3D"jsx-70e7e3c2411fa9bb squ=
+are-coord">B<!-- -->8</span><span class=3D"jsx-70e7e3c2411fa9bb square-inde=
+x">6</span></div><div class=3D"jsx-70e7e3c2411fa9bb square dark-square"><di=
+v class=3D"jsx-70e7e3c2411fa9bb bit-overlay"></div><span class=3D"jsx-70e7e=
+3c2411fa9bb square-coord">A<!-- -->8</span><span class=3D"jsx-70e7e3c2411fa=
+9bb square-index">7</span></div><div class=3D"jsx-70e7e3c2411fa9bb square d=
+ark-square"><div class=3D"jsx-70e7e3c2411fa9bb bit-overlay"></div><span cla=
+ss=3D"jsx-70e7e3c2411fa9bb square-coord">H<!-- -->7</span><span class=3D"js=
+x-70e7e3c2411fa9bb square-index">8</span></div><div class=3D"jsx-70e7e3c241=
+1fa9bb square light-square"><div class=3D"jsx-70e7e3c2411fa9bb bit-overlay"=
+></div><span class=3D"jsx-70e7e3c2411fa9bb square-coord">G<!-- -->7</span><=
+span class=3D"jsx-70e7e3c2411fa9bb square-index">9</span></div><div class=
+=3D"jsx-70e7e3c2411fa9bb square dark-square"><div class=3D"jsx-70e7e3c2411f=
+a9bb bit-overlay"></div><span class=3D"jsx-70e7e3c2411fa9bb square-coord">F=
+<!-- -->7</span><span class=3D"jsx-70e7e3c2411fa9bb square-index">10</span>=
+</div><div class=3D"jsx-70e7e3c2411fa9bb square light-square"><div class=3D=
+"jsx-70e7e3c2411fa9bb bit-overlay"></div><span class=3D"jsx-70e7e3c2411fa9b=
+b square-coord">E<!-- -->7</span><span class=3D"jsx-70e7e3c2411fa9bb square=
+-index">11</span></div><div class=3D"jsx-70e7e3c2411fa9bb square dark-squar=
+e"><div class=3D"jsx-70e7e3c2411fa9bb bit-overlay"></div><span class=3D"jsx=
+-70e7e3c2411fa9bb square-coord">D<!-- -->7</span><span class=3D"jsx-70e7e3c=
+2411fa9bb square-index">12</span></div><div class=3D"jsx-70e7e3c2411fa9bb s=
+quare light-square"><div class=3D"jsx-70e7e3c2411fa9bb bit-overlay"></div><=
+span class=3D"jsx-70e7e3c2411fa9bb square-coord">C<!-- -->7</span><span cla=
+ss=3D"jsx-70e7e3c2411fa9bb square-index">13</span></div><div class=3D"jsx-7=
+0e7e3c2411fa9bb square dark-square"><div class=3D"jsx-70e7e3c2411fa9bb bit-=
+overlay"></div><span class=3D"jsx-70e7e3c2411fa9bb square-coord">B<!-- -->7=
+</span><span class=3D"jsx-70e7e3c2411fa9bb square-index">14</span></div><di=
+v class=3D"jsx-70e7e3c2411fa9bb square light-square"><div class=3D"jsx-70e7=
+e3c2411fa9bb bit-overlay"></div><span class=3D"jsx-70e7e3c2411fa9bb square-=
+coord">A<!-- -->7</span><span class=3D"jsx-70e7e3c2411fa9bb square-index">1=
+5</span></div><div class=3D"jsx-70e7e3c2411fa9bb square light-square"><div =
+class=3D"jsx-70e7e3c2411fa9bb bit-overlay"></div><span class=3D"jsx-70e7e3c=
+2411fa9bb square-coord">H<!-- -->6</span><span class=3D"jsx-70e7e3c2411fa9b=
+b square-index">16</span></div><div class=3D"jsx-70e7e3c2411fa9bb square da=
+rk-square"><div class=3D"jsx-70e7e3c2411fa9bb bit-overlay"></div><span clas=
+s=3D"jsx-70e7e3c2411fa9bb square-coord">G<!-- -->6</span><span class=3D"jsx=
+-70e7e3c2411fa9bb square-index">17</span></div><div class=3D"jsx-70e7e3c241=
+1fa9bb square light-square"><div class=3D"jsx-70e7e3c2411fa9bb bit-overlay"=
+></div><span class=3D"jsx-70e7e3c2411fa9bb square-coord">F<!-- -->6</span><=
+span class=3D"jsx-70e7e3c2411fa9bb square-index">18</span></div><div class=
+=3D"jsx-70e7e3c2411fa9bb square dark-square"><div class=3D"jsx-70e7e3c2411f=
+a9bb bit-overlay"></div><span class=3D"jsx-70e7e3c2411fa9bb square-coord">E=
+<!-- -->6</span><span class=3D"jsx-70e7e3c2411fa9bb square-index">19</span>=
+</div><div class=3D"jsx-70e7e3c2411fa9bb square light-square"><div class=3D=
+"jsx-70e7e3c2411fa9bb bit-overlay"></div><span class=3D"jsx-70e7e3c2411fa9b=
+b square-coord">D<!-- -->6</span><span class=3D"jsx-70e7e3c2411fa9bb square=
+-index">20</span></div><div class=3D"jsx-70e7e3c2411fa9bb square dark-squar=
+e"><div class=3D"jsx-70e7e3c2411fa9bb bit-overlay"></div><span class=3D"jsx=
+-70e7e3c2411fa9bb square-coord">C<!-- -->6</span><span class=3D"jsx-70e7e3c=
+2411fa9bb square-index">21</span></div><div class=3D"jsx-70e7e3c2411fa9bb s=
+quare light-square"><div class=3D"jsx-70e7e3c2411fa9bb bit-overlay"></div><=
+span class=3D"jsx-70e7e3c2411fa9bb square-coord">B<!-- -->6</span><span cla=
+ss=3D"jsx-70e7e3c2411fa9bb square-index">22</span></div><div class=3D"jsx-7=
+0e7e3c2411fa9bb square dark-square"><div class=3D"jsx-70e7e3c2411fa9bb bit-=
+overlay"></div><span class=3D"jsx-70e7e3c2411fa9bb square-coord">A<!-- -->6=
+</span><span class=3D"jsx-70e7e3c2411fa9bb square-index">23</span></div><di=
+v class=3D"jsx-70e7e3c2411fa9bb square dark-square"><div class=3D"jsx-70e7e=
+3c2411fa9bb bit-overlay"></div><span class=3D"jsx-70e7e3c2411fa9bb square-c=
+oord">H<!-- -->5</span><span class=3D"jsx-70e7e3c2411fa9bb square-index">24=
+</span></div><div class=3D"jsx-70e7e3c2411fa9bb square light-square bit-set=
+"><div class=3D"jsx-70e7e3c2411fa9bb bit-overlay visible"></div><span class=
+=3D"jsx-70e7e3c2411fa9bb square-coord">G<!-- -->5</span><span class=3D"jsx-=
+70e7e3c2411fa9bb square-index">25</span></div><div class=3D"jsx-70e7e3c2411=
+fa9bb square dark-square"><div class=3D"jsx-70e7e3c2411fa9bb bit-overlay"><=
+/div><span class=3D"jsx-70e7e3c2411fa9bb square-coord">F<!-- -->5</span><sp=
+an class=3D"jsx-70e7e3c2411fa9bb square-index">26</span></div><div class=3D=
+"jsx-70e7e3c2411fa9bb square light-square"><div class=3D"jsx-70e7e3c2411fa9=
+bb bit-overlay"></div><span class=3D"jsx-70e7e3c2411fa9bb square-coord">E<!=
+-- -->5</span><span class=3D"jsx-70e7e3c2411fa9bb square-index">27</span></=
+div><div class=3D"jsx-70e7e3c2411fa9bb square dark-square"><div class=3D"js=
+x-70e7e3c2411fa9bb bit-overlay"></div><span class=3D"jsx-70e7e3c2411fa9bb s=
+quare-coord">D<!-- -->5</span><span class=3D"jsx-70e7e3c2411fa9bb square-in=
+dex">28</span></div><div class=3D"jsx-70e7e3c2411fa9bb square light-square"=
+><div class=3D"jsx-70e7e3c2411fa9bb bit-overlay"></div><span class=3D"jsx-7=
+0e7e3c2411fa9bb square-coord">C<!-- -->5</span><span class=3D"jsx-70e7e3c24=
+11fa9bb square-index">29</span></div><div class=3D"jsx-70e7e3c2411fa9bb squ=
+are dark-square"><div class=3D"jsx-70e7e3c2411fa9bb bit-overlay"></div><spa=
+n class=3D"jsx-70e7e3c2411fa9bb square-coord">B<!-- -->5</span><span class=
+=3D"jsx-70e7e3c2411fa9bb square-index">30</span></div><div class=3D"jsx-70e=
+7e3c2411fa9bb square light-square"><div class=3D"jsx-70e7e3c2411fa9bb bit-o=
+verlay"></div><span class=3D"jsx-70e7e3c2411fa9bb square-coord">A<!-- -->5<=
+/span><span class=3D"jsx-70e7e3c2411fa9bb square-index">31</span></div><div=
+ class=3D"jsx-70e7e3c2411fa9bb square light-square"><div class=3D"jsx-70e7e=
+3c2411fa9bb bit-overlay"></div><span class=3D"jsx-70e7e3c2411fa9bb square-c=
+oord">H<!-- -->4</span><span class=3D"jsx-70e7e3c2411fa9bb square-index">32=
+</span></div><div class=3D"jsx-70e7e3c2411fa9bb square dark-square"><div cl=
+ass=3D"jsx-70e7e3c2411fa9bb bit-overlay"></div><span class=3D"jsx-70e7e3c24=
+11fa9bb square-coord">G<!-- -->4</span><span class=3D"jsx-70e7e3c2411fa9bb =
+square-index">33</span></div><div class=3D"jsx-70e7e3c2411fa9bb square ligh=
+t-square"><div class=3D"jsx-70e7e3c2411fa9bb bit-overlay"></div><span class=
+=3D"jsx-70e7e3c2411fa9bb square-coord">F<!-- -->4</span><span class=3D"jsx-=
+70e7e3c2411fa9bb square-index">34</span></div><div class=3D"jsx-70e7e3c2411=
+fa9bb square dark-square"><div class=3D"jsx-70e7e3c2411fa9bb bit-overlay"><=
+/div><span class=3D"jsx-70e7e3c2411fa9bb square-coord">E<!-- -->4</span><sp=
+an class=3D"jsx-70e7e3c2411fa9bb square-index">35</span></div><div class=3D=
+"jsx-70e7e3c2411fa9bb square light-square"><div class=3D"jsx-70e7e3c2411fa9=
+bb bit-overlay"></div><span class=3D"jsx-70e7e3c2411fa9bb square-coord">D<!=
+-- -->4</span><span class=3D"jsx-70e7e3c2411fa9bb square-index">36</span></=
+div><div class=3D"jsx-70e7e3c2411fa9bb square dark-square"><div class=3D"js=
+x-70e7e3c2411fa9bb bit-overlay"></div><span class=3D"jsx-70e7e3c2411fa9bb s=
+quare-coord">C<!-- -->4</span><span class=3D"jsx-70e7e3c2411fa9bb square-in=
+dex">37</span></div><div class=3D"jsx-70e7e3c2411fa9bb square light-square"=
+><div class=3D"jsx-70e7e3c2411fa9bb bit-overlay"></div><span class=3D"jsx-7=
+0e7e3c2411fa9bb square-coord">B<!-- -->4</span><span class=3D"jsx-70e7e3c24=
+11fa9bb square-index">38</span></div><div class=3D"jsx-70e7e3c2411fa9bb squ=
+are dark-square"><div class=3D"jsx-70e7e3c2411fa9bb bit-overlay"></div><spa=
+n class=3D"jsx-70e7e3c2411fa9bb square-coord">A<!-- -->4</span><span class=
+=3D"jsx-70e7e3c2411fa9bb square-index">39</span></div><div class=3D"jsx-70e=
+7e3c2411fa9bb square dark-square"><div class=3D"jsx-70e7e3c2411fa9bb bit-ov=
+erlay"></div><span class=3D"jsx-70e7e3c2411fa9bb square-coord">H<!-- -->3</=
+span><span class=3D"jsx-70e7e3c2411fa9bb square-index">40</span></div><div =
+class=3D"jsx-70e7e3c2411fa9bb square light-square"><div class=3D"jsx-70e7e3=
+c2411fa9bb bit-overlay"></div><span class=3D"jsx-70e7e3c2411fa9bb square-co=
+ord">G<!-- -->3</span><span class=3D"jsx-70e7e3c2411fa9bb square-index">41<=
+/span></div><div class=3D"jsx-70e7e3c2411fa9bb square dark-square"><div cla=
+ss=3D"jsx-70e7e3c2411fa9bb bit-overlay"></div><span class=3D"jsx-70e7e3c241=
+1fa9bb square-coord">F<!-- -->3</span><span class=3D"jsx-70e7e3c2411fa9bb s=
+quare-index">42</span></div><div class=3D"jsx-70e7e3c2411fa9bb square light=
+-square"><div class=3D"jsx-70e7e3c2411fa9bb bit-overlay"></div><span class=
+=3D"jsx-70e7e3c2411fa9bb square-coord">E<!-- -->3</span><span class=3D"jsx-=
+70e7e3c2411fa9bb square-index">43</span></div><div class=3D"jsx-70e7e3c2411=
+fa9bb square dark-square"><div class=3D"jsx-70e7e3c2411fa9bb bit-overlay"><=
+/div><span class=3D"jsx-70e7e3c2411fa9bb square-coord">D<!-- -->3</span><sp=
+an class=3D"jsx-70e7e3c2411fa9bb square-index">44</span></div><div class=3D=
+"jsx-70e7e3c2411fa9bb square light-square"><div class=3D"jsx-70e7e3c2411fa9=
+bb bit-overlay"></div><span class=3D"jsx-70e7e3c2411fa9bb square-coord">C<!=
+-- -->3</span><span class=3D"jsx-70e7e3c2411fa9bb square-index">45</span></=
+div><div class=3D"jsx-70e7e3c2411fa9bb square dark-square"><div class=3D"js=
+x-70e7e3c2411fa9bb bit-overlay"></div><span class=3D"jsx-70e7e3c2411fa9bb s=
+quare-coord">B<!-- -->3</span><span class=3D"jsx-70e7e3c2411fa9bb square-in=
+dex">46</span></div><div class=3D"jsx-70e7e3c2411fa9bb square light-square"=
+><div class=3D"jsx-70e7e3c2411fa9bb bit-overlay"></div><span class=3D"jsx-7=
+0e7e3c2411fa9bb square-coord">A<!-- -->3</span><span class=3D"jsx-70e7e3c24=
+11fa9bb square-index">47</span></div><div class=3D"jsx-70e7e3c2411fa9bb squ=
+are light-square"><div class=3D"jsx-70e7e3c2411fa9bb bit-overlay"></div><sp=
+an class=3D"jsx-70e7e3c2411fa9bb square-coord">H<!-- -->2</span><span class=
+=3D"jsx-70e7e3c2411fa9bb square-index">48</span></div><div class=3D"jsx-70e=
+7e3c2411fa9bb square dark-square"><div class=3D"jsx-70e7e3c2411fa9bb bit-ov=
+erlay"></div><span class=3D"jsx-70e7e3c2411fa9bb square-coord">G<!-- -->2</=
+span><span class=3D"jsx-70e7e3c2411fa9bb square-index">49</span></div><div =
+class=3D"jsx-70e7e3c2411fa9bb square light-square"><div class=3D"jsx-70e7e3=
+c2411fa9bb bit-overlay"></div><span class=3D"jsx-70e7e3c2411fa9bb square-co=
+ord">F<!-- -->2</span><span class=3D"jsx-70e7e3c2411fa9bb square-index">50<=
+/span></div><div class=3D"jsx-70e7e3c2411fa9bb square dark-square"><div cla=
+ss=3D"jsx-70e7e3c2411fa9bb bit-overlay"></div><span class=3D"jsx-70e7e3c241=
+1fa9bb square-coord">E<!-- -->2</span><span class=3D"jsx-70e7e3c2411fa9bb s=
+quare-index">51</span></div><div class=3D"jsx-70e7e3c2411fa9bb square light=
+-square"><div class=3D"jsx-70e7e3c2411fa9bb bit-overlay"></div><span class=
+=3D"jsx-70e7e3c2411fa9bb square-coord">D<!-- -->2</span><span class=3D"jsx-=
+70e7e3c2411fa9bb square-index">52</span></div><div class=3D"jsx-70e7e3c2411=
+fa9bb square dark-square"><div class=3D"jsx-70e7e3c2411fa9bb bit-overlay"><=
+/div><span class=3D"jsx-70e7e3c2411fa9bb square-coord">C<!-- -->2</span><sp=
+an class=3D"jsx-70e7e3c2411fa9bb square-index">53</span></div><div class=3D=
+"jsx-70e7e3c2411fa9bb square light-square"><div class=3D"jsx-70e7e3c2411fa9=
+bb bit-overlay"></div><span class=3D"jsx-70e7e3c2411fa9bb square-coord">B<!=
+-- -->2</span><span class=3D"jsx-70e7e3c2411fa9bb square-index">54</span></=
+div><div class=3D"jsx-70e7e3c2411fa9bb square dark-square"><div class=3D"js=
+x-70e7e3c2411fa9bb bit-overlay"></div><span class=3D"jsx-70e7e3c2411fa9bb s=
+quare-coord">A<!-- -->2</span><span class=3D"jsx-70e7e3c2411fa9bb square-in=
+dex">55</span></div><div class=3D"jsx-70e7e3c2411fa9bb square dark-square">=
+<div class=3D"jsx-70e7e3c2411fa9bb bit-overlay"></div><span class=3D"jsx-70=
+e7e3c2411fa9bb square-coord">H<!-- -->1</span><span class=3D"jsx-70e7e3c241=
+1fa9bb square-index">56</span></div><div class=3D"jsx-70e7e3c2411fa9bb squa=
+re light-square"><div class=3D"jsx-70e7e3c2411fa9bb bit-overlay"></div><spa=
+n class=3D"jsx-70e7e3c2411fa9bb square-coord">G<!-- -->1</span><span class=
+=3D"jsx-70e7e3c2411fa9bb square-index">57</span></div><div class=3D"jsx-70e=
+7e3c2411fa9bb square dark-square"><div class=3D"jsx-70e7e3c2411fa9bb bit-ov=
+erlay"></div><span class=3D"jsx-70e7e3c2411fa9bb square-coord">F<!-- -->1</=
+span><span class=3D"jsx-70e7e3c2411fa9bb square-index">58</span></div><div =
+class=3D"jsx-70e7e3c2411fa9bb square light-square"><div class=3D"jsx-70e7e3=
+c2411fa9bb bit-overlay"></div><span class=3D"jsx-70e7e3c2411fa9bb square-co=
+ord">E<!-- -->1</span><span class=3D"jsx-70e7e3c2411fa9bb square-index">59<=
+/span></div><div class=3D"jsx-70e7e3c2411fa9bb square dark-square"><div cla=
+ss=3D"jsx-70e7e3c2411fa9bb bit-overlay"></div><span class=3D"jsx-70e7e3c241=
+1fa9bb square-coord">D<!-- -->1</span><span class=3D"jsx-70e7e3c2411fa9bb s=
+quare-index">60</span></div><div class=3D"jsx-70e7e3c2411fa9bb square light=
+-square"><div class=3D"jsx-70e7e3c2411fa9bb bit-overlay"></div><span class=
+=3D"jsx-70e7e3c2411fa9bb square-coord">C<!-- -->1</span><span class=3D"jsx-=
+70e7e3c2411fa9bb square-index">61</span></div><div class=3D"jsx-70e7e3c2411=
+fa9bb square dark-square"><div class=3D"jsx-70e7e3c2411fa9bb bit-overlay"><=
+/div><span class=3D"jsx-70e7e3c2411fa9bb square-coord">B<!-- -->1</span><sp=
+an class=3D"jsx-70e7e3c2411fa9bb square-index">62</span></div><div class=3D=
+"jsx-70e7e3c2411fa9bb square light-square"><div class=3D"jsx-70e7e3c2411fa9=
+bb bit-overlay"></div><span class=3D"jsx-70e7e3c2411fa9bb square-coord">A<!=
+-- -->1</span><span class=3D"jsx-70e7e3c2411fa9bb square-index">63</span></=
+div></div></div><div class=3D"jsx-70e7e3c2411fa9bb bitboard-info"><div clas=
+s=3D"jsx-70e7e3c2411fa9bb info-item"><span class=3D"jsx-70e7e3c2411fa9bb in=
+fo-label">Binary: </span><span class=3D"jsx-70e7e3c2411fa9bb info-value bin=
+ary">00000000 00000000 00000000 00000000 00000010 00000000 00000000 0000000=
+0</span></div><div class=3D"jsx-70e7e3c2411fa9bb info-item"><span class=3D"=
+jsx-70e7e3c2411fa9bb info-label">Set bits: </span><span class=3D"jsx-70e7e3=
+c2411fa9bb info-value">25 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; =
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></div></div><=
+/div></div><p>I hope this helps show how bitboards can be the building bloc=
+ks of any kind of chess computation.</p><p>In practice, chess engines often=
+ pre-compute and store attack masks in lookup tables for even better perfor=
+mance, rather than calculating them on the fly like this =E2=80=93 as well =
+as other sophisticated techniques like <a href=3D"https://www.chessprogramm=
+ing.org/Zobrist_Hashing">zobrist hashing</a> and <a href=3D"https://www.che=
+ssprogramming.org/Magic_Bitboards">magic bitboards</a>.</p><p>For further r=
+eading, I've found the <a href=3D"https://www.chessprogramming.org/Bitboard=
+s">Chess Programming Wiki</a> and the source code for <code>python-chess</c=
+ode> (e.g. <a href=3D"https://github.com/niklasf/python-chess/blob/ffa04827=
+e325de5b4d39a67eee3528474b814285/chess/__init__.py#L875">calculating attack=
+ masks</a>) to both be very useful.</p><p>I also have an older post which s=
+erves as a gentle introduction to chess engines: <a href=3D"https://healeyc=
+odes.com/building-my-own-chess-engine">Building My Own Chess Engine</a>.</p=
+></div></main><hr class=3D"jsx-b6ee29e184816190"><div class=3D"jsx-28348507=
+20 newsletter-section"><p class=3D"jsx-2834850720 newsletter-desc">Subscrib=
+e to be notified (somewhat irregularly) of my new posts.</p><form action=3D=
+"https://buttondown.email/api/emails/embed-subscribe/healeycodes" method=3D=
+"post" target=3D"popupwindow" class=3D"jsx-2834850720 embeddable-buttondown=
+-form"><div class=3D"jsx-2834850720 control"><input required=3D"" placehold=
+er=3D"adalovelace@gmail.com" type=3D"email" name=3D"email" id=3D"bd-email" =
+class=3D"jsx-2834850720 email"><input type=3D"submit" class=3D"jsx-28348507=
+20 subscribe" value=3D"Subscribe"></div></form></div><div class=3D"jsx-b6ee=
+29e184816190 other-posts"><div class=3D"jsx-b6ee29e184816190 other-posts-li=
+nk prev"><a href=3D"https://healeycodes.com/installing-npm-packages-very-qu=
+ickly">=E2=86=90 Installing NPM Packages Very Quickly</a></div><div class=
+=3D"jsx-b6ee29e184816190 other-posts-link next"><a href=3D"https://healeyco=
+des.com/how-i-made-queuedle">How I Made Queuedle =E2=86=92</a></div></div><=
+/div><!--$--><!--/$--></div><next-route-announcer><p aria-live=3D"assertive=
+" id=3D"__next-route-announcer__" role=3D"alert" style=3D"border: 0px; clip=
+: rect(0px, 0px, 0px, 0px); height: 1px; margin: -1px; overflow: hidden; pa=
+dding: 0px; position: absolute; top: 0px; width: 1px; white-space: nowrap; =
+overflow-wrap: normal;"></p></next-route-announcer></body></html>
+------MultipartBoundary--K9nbMfIoinH453O6WTnHGBoL7ZHVufPO1PCU1QkY65----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-08adaae4-d93e-4821-91c1-16a09f05c1bd@mhtml.blink
+
+@charset "utf-8";
+
+@font-face { font-family: "IBM Plex Mono"; font-style: normal; font-weight:=
+ 400; font-display: swap; src: url("https://fonts.gstatic.com/s/ibmplexmono=
+/v20/-F63fjptAgt5VM-kVkqdyU8n5is.woff") format("woff"); }
+
+@font-face { font-family: "IBM Plex Mono"; font-style: normal; font-weight:=
+ 400; font-display: swap; src: url("https://fonts.gstatic.com/s/ibmplexmono=
+/v20/-F63fjptAgt5VM-kVkqdyU8n1iIq131nj-otFQ.woff2") format("woff2"); unicod=
+e-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-F=
+E2F; }
+
+@font-face { font-family: "IBM Plex Mono"; font-style: normal; font-weight:=
+ 400; font-display: swap; src: url("https://fonts.gstatic.com/s/ibmplexmono=
+/v20/-F63fjptAgt5VM-kVkqdyU8n1isq131nj-otFQ.woff2") format("woff2"); unicod=
+e-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: "IBM Plex Mono"; font-style: normal; font-weight:=
+ 400; font-display: swap; src: url("https://fonts.gstatic.com/s/ibmplexmono=
+/v20/-F63fjptAgt5VM-kVkqdyU8n1iAq131nj-otFQ.woff2") format("woff2"); unicod=
+e-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, =
+U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: "IBM Plex Mono"; font-style: normal; font-weight:=
+ 400; font-display: swap; src: url("https://fonts.gstatic.com/s/ibmplexmono=
+/v20/-F63fjptAgt5VM-kVkqdyU8n1iEq131nj-otFQ.woff2") format("woff2"); unicod=
+e-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+30=
+8, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20A=
+D-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: "IBM Plex Mono"; font-style: normal; font-weight:=
+ 400; font-display: swap; src: url("https://fonts.gstatic.com/s/ibmplexmono=
+/v20/-F63fjptAgt5VM-kVkqdyU8n1i8q131nj-o.woff2") format("woff2"); unicode-r=
+ange: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+30=
+8, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FE=
+FF, U+FFFD; }
+------MultipartBoundary--K9nbMfIoinH453O6WTnHGBoL7ZHVufPO1PCU1QkY65----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-bd4095ba-995c-42bd-adcf-bb860d2c0e22@mhtml.blink
+
+@charset "utf-8";
+
+@font-face { font-family: Inter; font-style: normal; font-weight: 400; font=
+-display: swap; src: url("https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3i=
+LTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfMZs.woff") format("woff"); }
+
+@font-face { font-family: Inter; font-style: normal; font-weight: 400; font=
+-display: swap; src: url("https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3i=
+LTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZJhjp-Ek-_EeAmM.woff") format("woff")=
+; unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, =
+U+FE2E-FE2F; }
+
+@font-face { font-family: Inter; font-style: normal; font-weight: 400; font=
+-display: swap; src: url("https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3i=
+LTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZthjp-Ek-_EeAmM.woff") format("woff")=
+; unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: Inter; font-style: normal; font-weight: 400; font=
+-display: swap; src: url("https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3i=
+LTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZNhjp-Ek-_EeAmM.woff") format("woff")=
+; unicode-range: U+1F00-1FFF; }
+
+@font-face { font-family: Inter; font-style: normal; font-weight: 400; font=
+-display: swap; src: url("https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3i=
+LTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZxhjp-Ek-_EeAmM.woff") format("woff")=
+; unicode-range: U+370-377, U+37A-37F, U+384-38A, U+38C, U+38E-3A1, U+3A3-3=
+FF; }
+
+@font-face { font-family: Inter; font-style: normal; font-weight: 400; font=
+-display: swap; src: url("https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3i=
+LTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZBhjp-Ek-_EeAmM.woff") format("woff")=
+; unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1=
+AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB;=
+ }
+
+@font-face { font-family: Inter; font-style: normal; font-weight: 400; font=
+-display: swap; src: url("https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3i=
+LTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZFhjp-Ek-_EeAmM.woff") format("woff")=
+; unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+3=
+04, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20A=
+B, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: Inter; font-style: normal; font-weight: 400; font=
+-display: swap; src: url("https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3i=
+LTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZ9hjp-Ek-_EeA.woff") format("woff"); =
+unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+=
+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2=
+215, U+FEFF, U+FFFD; }
+------MultipartBoundary--K9nbMfIoinH453O6WTnHGBoL7ZHVufPO1PCU1QkY65----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-f86a99da-087e-4922-b939-03c0576b99c2@mhtml.blink
+
+@charset "utf-8";
+
+.container.jsx-2905096934 { margin-left: auto; margin-right: auto; max-widt=
+h: 725px; padding: 32px 14px 96px; }
+------MultipartBoundary--K9nbMfIoinH453O6WTnHGBoL7ZHVufPO1PCU1QkY65----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-3dc4bc95-94cb-4176-8a4b-ab9f9f908094@mhtml.blink
+
+@charset "utf-8";
+
+:root { --text: #1d1d27; --input-background: #fff; --link: #1772ea; --link-=
+hover: #496495; --light-text: #73738b; --border: #b6b6c2; --code-border: #b=
+6b6c294; --button: #4a7ddd; --button-text: #fff; --aside: #d7d5ce; }
+
+html, body { padding: 0px; margin: 0px; font-family: Inter, sans-serif; fon=
+t-size: 16px; letter-spacing: -0.01em; }
+
+h1, h2, h3, h4, h5, h6 { letter-spacing: -0.24px; font-weight: 400; padding=
+-top: 16px; padding-bottom: 16px; }
+
+p { margin-top: 20px; margin-bottom: 20px; line-height: 25px; color: var(--=
+text); }
+
+pre, code { font-family: "IBM Plex Mono", monospace; font-size: 14px; borde=
+r-radius: 0.4em; }
+
+code { background-color: rgb(246, 248, 250); padding: 3px; border-radius: 0=
+.4em; }
+
+.prism-code { border-radius: 0.4em; border: 1px solid var(--code-border); }
+
+hr { border-top: 1px solid var(--border); margin-top: 48px; margin-bottom: =
+48px; }
+
+div[class*=3D"language-"], div[class*=3D"language-"] { line-height: 25px; p=
+adding: 8px 8px 16px; overflow: overlay; }
+
+* { box-sizing: border-box; }
+
+a { color: var(--link); text-decoration: none; overflow-wrap: break-word; }
+
+a:hover { color: var(--link-hover); text-decoration: none; }
+
+ul { padding-top: 3px; padding-bottom: 3px; padding-left: 24px; }
+
+li { padding-top: 3px; padding-bottom: 3px; line-height: 25px; }
+
+blockquote { color: var(--light-text); margin-left: 14px; margin-right: 0px=
+; border-left-color: var(--border); border-left-style: solid; border-left-w=
+idth: 2px; }
+
+blockquote > p { color: var(--light-text); padding-left: 14px; }
+------MultipartBoundary--K9nbMfIoinH453O6WTnHGBoL7ZHVufPO1PCU1QkY65----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-dc4f4727-e8b3-4834-b545-161549110b54@mhtml.blink
+
+@charset "utf-8";
+
+header.jsx-b6ee29e184816190 { padding-top: 16px; padding-bottom: 16px; }
+
+.post-title.jsx-b6ee29e184816190 { margin-bottom: 0px; padding-bottom: 0px;=
+ }
+
+.post-text.jsx-b6ee29e184816190 { padding-top: 16px; }
+
+.post-date.jsx-b6ee29e184816190 { margin-top: 0px; padding-top: 8px; color:=
+ var(--light-text); }
+
+.other-posts.jsx-b6ee29e184816190 { padding-top: 48px; display: flex; flex-=
+wrap: wrap; -webkit-box-pack: justify; justify-content: space-between; gap:=
+ 16px; }
+
+.other-posts-link.jsx-b6ee29e184816190 { padding-bottom: 32px; }
+
+.other-posts-link.prev.jsx-b6ee29e184816190 { text-align: left; }
+
+.other-posts-link.next.jsx-b6ee29e184816190 { text-align: right; }
+
+aside.jsx-b6ee29e184816190 { background-color: var(--aside); padding: 1.5em=
+; margin-bottom: 2.5em; }
+------MultipartBoundary--K9nbMfIoinH453O6WTnHGBoL7ZHVufPO1PCU1QkY65----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-5ba9262a-aff7-4f1a-a68e-a229e05e2c49@mhtml.blink
+
+@charset "utf-8";
+
+.newsletter-section.jsx-2834850720 { margin-top: 20px; padding-left: 16px; =
+padding-right: 16px; padding-bottom: 16px; border: 1px solid var(--border);=
+ border-radius: 0.4rem; }
+
+.newsletter-desc.jsx-2834850720 { margin-bottom: 16px; }
+
+.control.jsx-2834850720 { display: flex; max-width: 500px; }
+
+.email.jsx-2834850720 { width: 212px; border-style: solid; border-image: no=
+ne; border-color: var(--border); font-family: inherit; display: block; bord=
+er-radius: 0.4rem; border-width: 1px; background-color: var(--input-backgro=
+und); padding: 0.5rem 0.75rem; font-size: 1rem; font-weight: 400; margin-ri=
+ght: 0.5rem; outline: none; }
+
+.subscribe.jsx-2834850720 { appearance: none; font-family: inherit; cursor:=
+ pointer; border-radius: 0.4rem; border-width: 1px; border-color: transpare=
+nt; vertical-align: middle; font-size: 1rem; line-height: 1.5rem; padding: =
+0.375rem 0.75rem; background-color: var(--button); font-weight: 500; color:=
+ var(--button-text); min-width: 8rem; }
+
+@media only screen and (max-width: 725px) {
+  .control.jsx-2834850720 { display: block; }
+  .email.jsx-2834850720 { width: 100%; }
+  .subscribe.jsx-2834850720 { margin-top: 8px; width: 100%; }
+}
+------MultipartBoundary--K9nbMfIoinH453O6WTnHGBoL7ZHVufPO1PCU1QkY65----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-f63e99fe-0d6f-410a-82e2-458e2c687f72@mhtml.blink
+
+@charset "utf-8";
+
+.visualizer-container.jsx-70e7e3c2411fa9bb { width: 100%; max-width: 1200px=
+; margin: 0px auto; }
+
+.code-line.highlighted.jsx-70e7e3c2411fa9bb { background-color: rgb(254, 24=
+3, 199); border-left: 4px solid rgb(245, 158, 11); padding-left: 0.5rem; }
+
+.board-container.jsx-70e7e3c2411fa9bb { width: 100%; margin-top: 0.1rem; }
+
+.chessboard.jsx-70e7e3c2411fa9bb { aspect-ratio: 1 / 1; width: 100%; max-wi=
+dth: 448px; margin: 0px auto; }
+
+.board-grid.jsx-70e7e3c2411fa9bb { display: grid; grid-template-columns: re=
+peat(8, 1fr); height: 100%; }
+
+.square.jsx-70e7e3c2411fa9bb { position: relative; display: block; border: =
+1px solid rgb(229, 231, 235); }
+
+.light-square.jsx-70e7e3c2411fa9bb { background-color: white; }
+
+.dark-square.jsx-70e7e3c2411fa9bb { background-color: rgb(209, 213, 219); }
+
+.bit-set.jsx-70e7e3c2411fa9bb { box-shadow: rgb(59, 130, 246) 0px 0px 0px 2=
+px inset; }
+
+.bit-overlay.jsx-70e7e3c2411fa9bb { position: absolute; inset: 0px; display=
+: block; transition: opacity 0.5s; background-color: rgba(59, 130, 246, 0.5=
+); opacity: 0; }
+
+.bit-overlay.visible.jsx-70e7e3c2411fa9bb { opacity: 1; }
+
+.square-coord.jsx-70e7e3c2411fa9bb { font-size: 0.75rem; opacity: 0.5; posi=
+tion: absolute; top: 2px; left: 2px; }
+
+.square-index.jsx-70e7e3c2411fa9bb { font-size: 0.75rem; opacity: 0.5; posi=
+tion: absolute; bottom: 2px; right: 2px; }
+
+.bitboard-info.jsx-70e7e3c2411fa9bb { margin-left: auto; margin-right: auto=
+; width: 100%; max-width: 448px; margin-top: 0.25rem; font-family: "IBM Ple=
+x Mono", monospace; font-size: 0.875rem; }
+
+.info-item.jsx-70e7e3c2411fa9bb { padding: 0.5rem; background-color: rgb(24=
+9, 250, 251); border-radius: 0.25rem; margin-bottom: 0.25rem; }
+------MultipartBoundary--K9nbMfIoinH453O6WTnHGBoL7ZHVufPO1PCU1QkY65----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-083a2755-dd6d-4383-9c0a-e53843177201@mhtml.blink
+
+@charset "utf-8";
+
+.code-line.jsx-1290c20ab25545a6 { transition: background-color 0.2s; paddin=
+g-left: 0.75rem; }
+
+.code-line.highlighted.jsx-1290c20ab25545a6 { background-color: rgb(254, 24=
+3, 199); border-left: 4px solid rgb(245, 158, 11); padding-left: 0.5rem; }
+------MultipartBoundary--K9nbMfIoinH453O6WTnHGBoL7ZHVufPO1PCU1QkY65----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-57744019-6484-4d12-990e-73d87ff50bcc@mhtml.blink
+
+@charset "utf-8";
+
+ul.jsx-b6b2ba738cc0019d { list-style: none; padding: 0px; margin: 0px; disp=
+lay: flex; flex-wrap: wrap; }
+
+li.jsx-b6b2ba738cc0019d { padding-right: 16px; }
+------MultipartBoundary--K9nbMfIoinH453O6WTnHGBoL7ZHVufPO1PCU1QkY65------
